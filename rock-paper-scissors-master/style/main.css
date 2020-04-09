@@ -1,0 +1,65 @@
+
+html, body{
+    box-sizing: border-box;
+    margin: 0px;
+    overflow-x: hidden;
+    padding: 0px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    width: 1366px;
+    background-color:  hsl(229, 25%, 31%);
+}
+.main{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+}
+.first{
+    box-sizing: border-box;
+    height: 150px;
+    width: 700px;
+    padding: 0px 30px;
+    border: solid 2px hsl(217, 16%, 45%) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.score{
+    width: 150px;
+    height: 100px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.score p{
+    color: hsl(229, 64%, 46%);
+    text-transform: uppercase;
+}
+.second{
+    background-image: url('../images/bg-triangle.svg');
+    background-repeat: no-repeat;
+}
+.icon{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:whitesmoke;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paper{
+    border: solid 30px hsl(230, 89%, 62%);
+}
+.scissors{
+    border: solid 30px hsl(39, 89%, 49%);
+}
+.rock{
+    border: solid 30px hsl(349, 71%, 52%);
+}
+.icon img{
+    width: 70px;
+}
