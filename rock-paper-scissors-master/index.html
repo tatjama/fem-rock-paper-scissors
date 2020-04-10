@@ -25,7 +25,7 @@
 <div class="main">
   <div class="section first">
     <div class="logo">
-      <img onclick="startGame()" src="./images/logo.svg">
+      <img  src="./images/logo.svg">
     </div>
     <div class="score">
       <p >S c o r e</p>
@@ -35,18 +35,18 @@
   <!--START DIV-->
   <div class="section second">
     <div class="first-row">
-    <div class="icon paper">
+    <div onclick="pickCard(this)"  class="icon paper">
       <div class="icon-bg">
       <img src="./images/icon-paper.svg">
     </div>
     </div>
-    <div class="icon scissors">
+    <div onclick="pickCard(this)"  class="icon scissors">
       <div class="icon-bg">
         <img src="./images/icon-scissors.svg">
     </div>
     </div>
   </div>
-    <div class="icon rock">
+    <div onclick="pickCard(this)"  class="icon rock">
       <div class="icon-bg">
       <img src="./images/icon-rock.svg">
     </div>
@@ -55,12 +55,12 @@
 </div>
 <!--GAME DIV-->
 
-  <!--USER ICON-->
+  <!--PLAYER ICON-->
 <div class="start-game">
 <div class="game">
   <div class="game-div" onclick="pick()">
     <p>Y o u &nbsp P i c k e d</p>
-    <div class="icon paper">
+    <div id="player-card" class="icon paper">
       <div class="icon-bg">
         <img src="./images/icon-paper.svg">
       </div>
@@ -70,7 +70,7 @@
   <div class="game-div">
     <p> T h e &nbsp H o u s e &nbsp P i c k e d</p> 
 
-    <div id="house" class="icon scissors">
+    <div id="house-card" class="icon scissors">
       <div class="icon-bg">
         <img src="./images/icon-scissors.svg">
       </div>
