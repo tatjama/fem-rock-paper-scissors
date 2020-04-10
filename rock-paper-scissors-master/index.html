@@ -54,12 +54,21 @@
 </div>
   <div class="section third">
     
-    <button>R u l e s</button>
+    <button onclick="showRules()">R u l e s</button>
   </div>
+  <script>
+    function showRules(){
+      document.querySelector(".rules").style.display = "inherit";
+
+    }
+    function hideRules(){
+      document.querySelector(".rules").style.display = "none";
+    }
+  </script>
   <div class="rules">
     <div class="first-row">
       <h2>Rules</h2>
-      <img style="width: 20px; height: 20px;" src="./images/icon-close.svg">
+      <img style="width: 20px; height: 20px;" onclick="hideRules()" src="./images/icon-close.svg">
     </div>
     <img src="./images/image-rules.svg">
   </div>

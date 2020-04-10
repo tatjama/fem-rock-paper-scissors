@@ -119,6 +119,7 @@ button{
     margin-top: -15px;   
 }
 .rules{
+    display: none;
     padding: 30px;
     height: 400px;
     width: 385px;
