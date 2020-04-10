@@ -1,13 +1,18 @@
-
-html, body{
+*{
     box-sizing: border-box;
     margin: 0px;
-    overflow-x: hidden;
     padding: 0px;
+}
+html, body{
+     
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 16px;
-    width: 1366px;
+    font-size: 16px;    
+    }
+.container{
     background-color:  hsl(229, 25%, 31%);
+    width: 1366px;
+    height: 735px;
+    padding: 30px;
 }
 .main{
     display: flex;
@@ -15,12 +20,11 @@ html, body{
     align-items: center;
     justify-content: space-around;
 }
-.first{
-    box-sizing: border-box;
+.first{   
     height: 150px;
     width: 700px;
     padding: 0px 30px;
-    border: solid 2px hsl(217, 16%, 45%) ;
+    border: solid 3px hsl(217, 16%, 45%) ;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -32,10 +36,19 @@ html, body{
     height: 100px;
     background-color: whitesmoke;
     border-radius: 10px;
+    text-align: center;
+    padding: 15px 0px;   
+    }
+h1{
+    font-size: 50px;   
 }
 .score p{
     color: hsl(229, 64%, 46%);
-    text-transform: uppercase;
+    text-transform: uppercase;    
+    font-size: 12px;
+    font-weight: 700;
+    font-stretch: extra-expanded;
+    
 }
 .second{
     background-image: url('../images/bg-triangle.svg');
@@ -44,6 +57,7 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 .first-row{
     display: flex;
@@ -55,12 +69,11 @@ html, body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color:whitesmoke;
-    box-sizing: border-box;
+    background-color:whitesmoke;    
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px;
+    margin: 50px;
 }
 .paper{
     border: solid 30px hsl(230, 89%, 62%);
@@ -70,8 +83,22 @@ html, body{
 }
 .rock{
     border: solid 30px hsl(349, 71%, 52%);
-    
+    margin: 0px;    
 }
 .icon img{
     width: 70px;
+}
+.third{
+    text-align: end;
+}
+button{
+    border: solid 3px hsl(217, 16%, 45%);
+    border-radius: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    background-color: hsl(229, 25%, 31%);
+    height: 35px;
+    width: 120px;
+    font-size: 12px; 
+    margin-top: -15px;   
 }
