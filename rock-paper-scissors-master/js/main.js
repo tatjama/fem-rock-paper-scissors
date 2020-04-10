@@ -9,3 +9,7 @@ function showRules(){
       document.querySelector('.second').style.display = "none";
       document.querySelector('.start-game').style.display = "initial";
   }
+  function pick(){
+      document.querySelector('#blank').style.display = "none";
+      document.querySelector('#house').style.display = "initial";
+  }

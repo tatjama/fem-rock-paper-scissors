@@ -141,6 +141,9 @@ h2{
     justify-content: center;
     padding: 80px;
 }
+#house{
+    display: none;
+}
 .game p{
     font-size: 16px;
     color: whitesmoke;
@@ -168,6 +171,16 @@ h2{
     width: 90px;
     height: auto;
 }
+.game .blank{
+    background-color: hsl(229, 25%, 31%);
+
+}
+
+.blank .icon-bg{
+    background-color: hsl(214, 47%, 23%);
+    
+    box-shadow: none;
+}
 .game .paper{
     box-shadow: 0px 14px  hsl(230, 89%, 62%);
 }
@@ -177,5 +190,5 @@ h2{
 }
 .game .rock{
     box-shadow: 0px 14px hsl(349, 71%, 52%);
-    margin: 50px;    
+       
 }
