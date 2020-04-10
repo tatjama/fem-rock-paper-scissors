@@ -77,8 +77,19 @@ h1{
     margin: 50px;
 }
 .paper{
-    border: solid 30px hsl(230, 89%, 65%);
+    /*border: solid 30px hsl(230, 89%, 65%);*/
+    background-color: hsl(230, 89%, 65%); ;
     box-shadow: 0px 10px  hsl(230, 89%, 62%);
+}
+.icon-bg{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 7px inset lightgray;
 }
 .scissors{
     border: solid 30px hsl(40, 84%, 53%);
