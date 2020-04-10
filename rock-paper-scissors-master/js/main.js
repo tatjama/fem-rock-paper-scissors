@@ -7,4 +7,5 @@ function showRules(){
   }
   function startGame(){
       document.querySelector('.second').style.display = "none";
+      document.querySelector('.start-game').style.display = "initial";
   }

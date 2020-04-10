@@ -42,7 +42,7 @@ html, body{
 h1{
     font-size: 50px;   
 }
-.score p{
+p{
     color: hsl(229, 64%, 46%);
     text-transform: uppercase;    
     font-size: 12px;
@@ -62,11 +62,9 @@ h1{
 .first-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
-.icon{
-   
+.icon{   
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -93,17 +91,15 @@ h1{
 }
 
 .scissors{
-    border: solid 30px hsl(40, 84%, 53%);
+    background-color: hsl(40, 84%, 53%);
     box-shadow: 0px 10px hsl(39, 89%, 49%);
 }
 .rock{
-    border: solid 30px hsl(349, 70%, 56%);
+    background-color: hsl(349, 70%, 56%);
     box-shadow: 0px 10px hsl(349, 71%, 52%);
     margin: 0px;    
 }
-.icon img{
-    width: 70px;
-}
+
 .third{
     text-align: end;
 }
@@ -135,4 +131,51 @@ h2{
     text-transform: uppercase;
     margin-bottom: 38px;
     font-size: 28px;
+}
+.start-game{
+    display: none;
+}
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px;
+}
+.game p{
+    font-size: 16px;
+    color: whitesmoke;
+}
+.game-div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;   
+}
+.icon img{
+    width: 70px;
+}
+.game .icon{
+    width: 280px;
+    height: 280px;
+    margin: 70px 35px -35px 35px;
+}
+.game .icon-bg{
+    width: 210px;
+    height: 210px;
+    box-shadow: 0px 11px inset lightgray;
+}
+.game img{
+    width: 90px;
+    height: auto;
+}
+.game .paper{
+    box-shadow: 0px 14px  hsl(230, 89%, 62%);
+}
+
+.game .scissors{
+    box-shadow: 0px 14px hsl(39, 89%, 49%);
+}
+.game .rock{
+    box-shadow: 0px 14px hsl(349, 71%, 52%);
+    margin: 50px;    
 }
