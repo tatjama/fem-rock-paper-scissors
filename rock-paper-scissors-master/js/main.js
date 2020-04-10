@@ -12,4 +12,5 @@ function showRules(){
   function pick(){
       document.querySelector('#blank').style.display = "none";
       document.querySelector('#house').style.display = "initial";
+      document.querySelector('#house').style.display = "flex";
   }
