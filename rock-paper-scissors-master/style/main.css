@@ -244,8 +244,9 @@ h2{
 }
 .gradient .four{
     border-radius: 50%;
-    background-color: teal;
-    padding: 60px;
+    /*background-color: teal;*/
+    background-image: repeating-radial-gradient(circle at 50%, hsl(237, 49%, 15%), hsl(214, 47%, 23%) 64px );
+    /*padding: 60px;*/
     width: 640px;
     height: 640px;
 }
