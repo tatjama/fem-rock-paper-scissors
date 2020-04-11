@@ -192,3 +192,17 @@ h2{
     box-shadow: 0px 14px hsl(349, 71%, 52%);
        
 }
+.play-again p{
+    color: hsl(349, 71%, 52%);
+    font-size: 12px;
+}
+.play-again{
+    width: 210px;
+    height: 45px;
+}
+.game-div h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: whitesmoke;
+    margin-bottom: 25px;
+}
