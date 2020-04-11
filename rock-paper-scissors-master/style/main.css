@@ -13,6 +13,7 @@ html, body{
     width: 1366px;
     height: 735px;
     padding: 30px;
+    overflow: hidden;
 }
 .main{
     display: flex;
@@ -30,6 +31,7 @@ html, body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 .score{
     width: 150px;
@@ -58,6 +60,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 .first-row{
     display: flex;
@@ -153,6 +156,7 @@ h2{
    flex-direction: column;
    align-items: center;
    justify-content: center;   
+  z-index: 1;
 }
 .icon img{
     width: 70px;
@@ -200,9 +204,48 @@ h2{
     width: 210px;
     height: 45px;
 }
+
 .game-div h2{
     text-transform: uppercase;
     font-size: 36px;
     color: whitesmoke;
     margin-bottom: 25px;
+}
+#gradient{
+  position: relative;
+  bottom: 535px;
+  left: 53px;
+  
+}
+#gradient1{
+    position: relative;
+    bottom: 535px;
+    left: 613px;
+}
+.gradient .one{
+    border-radius: 50%;
+    background-color: violet;
+    width: 280px;
+    height: 280px;
+}
+.gradient .two{
+    border-radius: 50%;
+    background-color: yellowgreen;
+    padding: 60px;
+    width: 400px;
+    height: 400px;
+}
+.gradient .three{
+    border-radius: 50%;
+    background-color: red;
+    padding: 60px;
+    width: 520px;
+    height: 520px;
+}
+.gradient .four{
+    border-radius: 50%;
+    background-color: teal;
+    padding: 60px;
+    width: 640px;
+    height: 640px;
 }
