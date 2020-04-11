@@ -77,8 +77,5 @@ function showRules(){
             break;
     }
     console.log(result);
-    return result;
     
-
-    }
   }
