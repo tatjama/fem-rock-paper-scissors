@@ -9,7 +9,7 @@ html, body{
     font-size: 16px;    
     }
 .container{
-    background-color:  hsl(229, 25%, 31%);
+    background-color: hsl(237, 49%, 15%) ;
     width: 1366px;
     height: 735px;
     padding: 30px;
@@ -87,8 +87,7 @@ p{
     justify-content: center;
     box-shadow: 0px 7px inset lightgray;
 }
-.paper{
-    /*border: solid 30px hsl(230, 89%, 65%);*/
+.paper{    
     background-color: hsl(230, 89%, 65%); ;
     box-shadow: 0px 10px  hsl(230, 89%, 62%);
 }
@@ -107,15 +106,17 @@ p{
     text-align: end;
 }
 button{
+    position: relative;
     border: solid 3px hsl(217, 16%, 45%);
     border-radius: 10px;
     color: whitesmoke;
     text-transform: uppercase;
-    background-color: hsl(229, 25%, 31%);
+    background-color:transparent;
     height: 35px;
     width: 120px;
     font-size: 12px; 
     margin-top: -15px;   
+    z-index: 1;
 }
 .rules{
     display: none;
@@ -177,24 +178,19 @@ h2{
 }
 .game .blank{
     background-color: hsl(229, 25%, 31%);
-
 }
-
 .blank .icon-bg{
-    background-color: hsl(214, 47%, 23%);
-    
+    background-color: hsl(214, 47%, 23%);    
     box-shadow: none;
 }
 .game .paper{
     box-shadow: 0px 14px  hsl(230, 89%, 62%);
 }
-
 .game .scissors{
     box-shadow: 0px 14px hsl(39, 89%, 49%);
 }
 .game .rock{
-    box-shadow: 0px 14px hsl(349, 71%, 52%);
-       
+    box-shadow: 0px 14px hsl(349, 71%, 52%);       
 }
 .play-again p{
     color: hsl(349, 71%, 52%);
@@ -204,7 +200,6 @@ h2{
     width: 210px;
     height: 45px;
 }
-
 .game-div h2{
     text-transform: uppercase;
     font-size: 36px;
@@ -213,14 +208,13 @@ h2{
 }
 #gradient{
   position: relative;
-  bottom: 535px;
-  left: 53px;
-  
+  bottom: 560px;
+  left: 28px;  
 }
 #gradient1{
     position: relative;
-    bottom: 535px;
-    left: 613px;
+    bottom: 560px;
+    left: 588px;
 }
 .gradient .one{
     border-radius: 50%;
@@ -230,23 +224,30 @@ h2{
 }
 .gradient .two{
     border-radius: 50%;
-    background-color: yellowgreen;
-    padding: 60px;
-    width: 400px;
-    height: 400px;
+    background-color: hsla(217, 16%, 45%, 0.2);
+    padding: 70px;
+    width: 420px;
+    height: 420px;    
 }
 .gradient .three{
     border-radius: 50%;
-    background-color: red;
-    padding: 60px;
-    width: 520px;
-    height: 520px;
+    background-color: hsla(229, 25%, 31%, 0.2);
+    padding: 70px;
+    width: 560px;
+    height: 560px;
 }
-.gradient .four{
-    border-radius: 50%;
-    /*background-color: teal;*/
+/**Interesting gradient effect***/
+
+/*.gradient .four{
+    border-radius: 50%;    
     background-image: repeating-radial-gradient(circle at 50%, hsl(237, 49%, 15%), hsl(214, 47%, 23%) 64px );
-    /*padding: 60px;*/
     width: 640px;
     height: 640px;
+}*/
+.gradient .four{
+    border-radius: 50%;
+    background-color: hsla(214, 47%, 23%, 0.2);
+    padding: 65px;
+    width: 700px;
+    height: 700px;
 }
