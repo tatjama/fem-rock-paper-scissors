@@ -58,7 +58,7 @@
   <!--PLAYER ICON-->
 <div class="start-game">
 <div class="game">
-  <div class="game-div" onclick="pick()">
+  <div class="game-div">
     <p>Y o u &nbsp P i c k e d</p>
     <div id="player-card" class="icon paper">
       <div class="icon-bg">
@@ -72,12 +72,12 @@
 
     <div id="house-card" class="icon scissors">
       <div class="icon-bg">
-        <img src="./images/icon-scissors.svg">
+        <img id="house-card-image" src="./images/icon-scissors.svg">
       </div>
     </div>
 
     <!--BLANK ICON-->
-    <div id="blank" class="icon blank">
+    <div id="blank" onclick="pickHouse()" class="icon blank">
       <div class="icon-bg"></div>
     </div>
     
