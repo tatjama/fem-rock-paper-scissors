@@ -141,11 +141,6 @@ h2{
     font-size: 28px;
 }
 
-
-@media screen and (max-width: 375px){
-    
-}
-
 .start-game{
     display: none;
 }
@@ -186,11 +181,11 @@ h2{
     width: 90px;
     height: auto;
 }
-.game .blank{
-    background-color: hsl(229, 25%, 31%);
+.game .blank{    
+   background-color: hsl(237, 49%, 15%);
 }
 .blank .icon-bg{
-    background-color: hsl(214, 47%, 23%);    
+    background-color: hsla(214, 47%, 23%, 0.2); 
     box-shadow: none;
 }
 .game .paper{
@@ -307,6 +302,23 @@ h2{
     h2{
         margin-bottom: 100px;
     }
+    .game{
+        padding: 0px;
+    }
+    .game p{
+        font-size: 10px;
+    }
+    .game-div{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;   
+       z-index: 1;
+       margin-bottom: 100px;
+     }
+     .game-div p{
+         margin-top: 20px;
+     }
 }
 #gradient{
   position: relative;
