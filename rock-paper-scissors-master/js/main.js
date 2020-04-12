@@ -1,6 +1,5 @@
 function showRules(){
     document.querySelector(".rules").style.display = "inherit";
-
   }
   function hideRules(){
     document.querySelector(".rules").style.display = "none";
@@ -18,13 +17,11 @@ function showRules(){
   }
   function pickHouse(){
       document.querySelector('#blank').style.display = "none";
-      //document.querySelector('#house-card').style.display = "initial";
       document.querySelector('#house-card').style.display = "flex";
       showHouseCard();
       console.log(rules());
-     // console.log(result);
      setTimeout(showResult, 1000);
-     //showResult();
+     
   }
   function showHouseCard(){
       let x = Math.floor((Math.random() * 3) + 1);    
@@ -79,7 +76,6 @@ function showRules(){
             break;            
     }
     return result;
-    //console.log(result);
     
   }
   function showResult(){
