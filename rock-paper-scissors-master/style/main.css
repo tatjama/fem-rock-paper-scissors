@@ -119,68 +119,6 @@ button{
     z-index: 1;
 }
 
-@media screen and (max-width: 375px){
-    .container{
-        width: 375px;
-        height: 750px;
-    }
-    .first{
-        width: 317px;
-        height: 100px;
-    }
-    .logo img{
-        height: 45px;
-        width: auto;
-    }
-    .score{
-        width: 78px;
-        height: 72px;
-        padding: 12px 0px;
-    }
-    .score p{
-        font-size: 9px;
-    }
-    h1{
-        font-size: 30px;
-    }
-    .icon{
-        width: 130px;
-        height: 130px;
-        margin: 105px 27px 14px 27px;
-        box-shadow: 0px 6px;
-    }
-    .icon-bg{
-        width: 100px;
-        height: 100px;
-    }
-    .icon img{
-        width: 45px;
-        height: auto;
-    }
-    .paper{
-        box-shadow: 0px 6px hsla(230, 89%, 65%, 0.7);
-    }
-    .scissors{
-        box-shadow: 0px 6px hsla(40, 84%, 53%, 0.7);
-    }
-    .rock{
-        box-shadow: 0px 6px hsla(349, 70%, 56%, 0.7);
-        margin: 0px;
-    }
-    .second{
-        background-size: 160px;
-       background-position-y: 170px;
-    }
-    .third{
-        text-align: center;
-        margin-top: 150px;
-        margin-bottom: 50px;
-    }
-    button{
-        height: 40px;
-        width: 135px;
-    }
-}
 
 .rules{
     display: none;
@@ -205,24 +143,7 @@ h2{
 
 
 @media screen and (max-width: 375px){
-    .rules{
-        width: 377px;
-        height: 765px;
-        margin-top: -20px;
     
-    }
-    .rules .first-row{
-        flex-direction: column;
-        margin-top: 80px;
-        align-items: center;
-    }
-    .rules .first-row img{
-        position: relative;
-        top: 430px;
-    }
-    h2{
-        margin-bottom: 100px;
-    }
 }
 
 .start-game{
@@ -273,14 +194,15 @@ h2{
     box-shadow: none;
 }
 .game .paper{
-    box-shadow: 0px 14px  hsl(230, 89%, 62%);
+    box-shadow: 0px 14px   hsla(230, 89%, 65%, 0.7);
 }
 .game .scissors{
-    box-shadow: 0px 14px hsl(39, 89%, 49%);
+    box-shadow: 0px 14px hsla(40, 84%, 53%, 0.7);
 }
 .game .rock{
-    box-shadow: 0px 14px hsl(349, 71%, 52%);       
+    box-shadow: 0px 14px hsla(349, 70%, 56%, 0.7);       
 }
+
 #play-again{
     display: none;
     margin: 0px 35px;
@@ -300,6 +222,92 @@ h2{
     margin-bottom: 25px;
 }
 
+@media screen and (max-width: 375px){
+    .container{
+        width: 375px;
+        height: 750px;
+    }
+    .first{
+        width: 317px;
+        height: 100px;
+    }
+    .logo img{
+        height: 45px;
+        width: auto;
+    }
+    .score{
+        width: 78px;
+        height: 72px;
+        padding: 12px 0px;
+    }
+    .score p{
+        font-size: 9px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .icon, .game .icon{
+        width: 130px;
+        height: 130px;
+        margin: 105px 27px 14px 27px;
+        
+    }
+    .icon-bg, .game .icon-bg{
+        width: 100px;
+        height: 100px;
+    }
+    .icon img{
+        width: 45px;
+        height: auto;
+    }
+    .paper, .game .paper{
+        box-shadow: 0px 6px hsla(230, 89%, 65%, 0.7);
+    }
+    .scissors, .game .scissors{
+        box-shadow: 0px 6px hsla(40, 84%, 53%, 0.7);
+    }
+    .rock, .game .rock{
+        box-shadow: 0px 6px hsla(349, 70%, 56%, 0.7);
+        margin: 0px;
+    }
+    .game .icon-bg{       
+        box-shadow: 0px 5px inset lightgray;
+    }
+    .blank .icon-bg{
+        box-shadow: none;
+    }
+    .second{
+        background-size: 160px;
+       background-position-y: 170px;
+    }
+    .third{
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    button{
+        height: 40px;
+        width: 135px;
+    }
+    .rules{
+        width: 377px;
+        height: 765px;
+        margin-top: -20px;
+    
+    }
+    .rules .first-row{
+        flex-direction: column;
+        margin-top: 80px;
+        align-items: center;
+    }
+    .rules .first-row img{
+        position: relative;
+        top: 430px;
+    }
+    h2{
+        margin-bottom: 100px;
+    }
+}
 #gradient{
   position: relative;
   bottom: 560px;
