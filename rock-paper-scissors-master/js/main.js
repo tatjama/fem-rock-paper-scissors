@@ -84,12 +84,12 @@ function showRules(){
   }
   function showResult(){
     switch(rules()){
-      case 'win':
+      case 'win':      
       document.querySelector('.gradient').id = 'gradient';
       document.getElementById('play-again').style.display = 'flex';
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
       break;
-      case 'lose':
+      case 'lose':      
       document.querySelector('.gradient').id = 'gradient1';
       document.getElementById('play-again').style.display = 'flex';
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp L o s e';
@@ -100,4 +100,12 @@ function showRules(){
       document.querySelector('#play-again h2').innerHTML = ' E q u a l';
       break;
     }
+  }
+  function playAgain(){
+    document.querySelector('.second').style.display = "flex";
+    document.getElementById('play-again').style.display = 'none';
+    document.querySelector('.gradient').id = '';
+    document.getElementById('house-card').style.display = "none";
+    document.getElementById('blank').style.display = "flex";
+    document.querySelector('.start-game').style.display = "none"; 
   }
