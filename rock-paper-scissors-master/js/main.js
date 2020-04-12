@@ -84,12 +84,14 @@ function showRules(){
       case 'win':      
       document.querySelector('.gradient').id = 'gradient';
       document.getElementById('play-again').style.display = 'flex';
+      //document.getElementById('play-again').style.display = 'initial';
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
       document.querySelector('.score h1').innerHTML = score + 1;
       break;
       case 'lose':      
       document.querySelector('.gradient').id = 'gradient1';
       document.getElementById('play-again').style.display = 'flex';
+      //document.getElementById('play-again').style.display = 'initial';
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp L o s e';
       document.querySelector('.score h1').innerHTML = score - 1;
       break;

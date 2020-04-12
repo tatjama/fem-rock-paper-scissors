@@ -201,6 +201,9 @@ h2{
 #play-again{
     display: none;
     margin: 0px 35px;
+    /**var 1*/
+    /*position: relative;
+    top: 70px;*/
 }
 .play-again p{
     color: hsl(349, 71%, 52%);
@@ -241,7 +244,7 @@ h2{
     h1{
         font-size: 30px;
     }
-    .icon, .game .icon{
+    .second .icon, .game .icon, #house-card{
         width: 130px;
         height: 130px;
         margin: 105px 27px 14px 27px;
@@ -261,7 +264,7 @@ h2{
     .scissors, .game .scissors{
         box-shadow: 0px 6px hsla(40, 84%, 53%, 0.7);
     }
-    .rock, .game .rock{
+    .icon.rock, .game .rock{
         box-shadow: 0px 6px hsla(349, 70%, 56%, 0.7);
         margin: 0px;
     }
@@ -319,7 +322,9 @@ h2{
      .game-div p{
          margin-top: 20px;
      }
-    
+    #play-again{
+        top: 300px;
+    }
 }
 #gradient{
   position: relative;
