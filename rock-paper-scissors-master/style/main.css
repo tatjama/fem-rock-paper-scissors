@@ -195,6 +195,7 @@ h2{
 }
 #play-again{
     display: none;
+    margin: 0px 35px;
 }
 .play-again p{
     color: hsl(349, 71%, 52%);
@@ -213,13 +214,13 @@ h2{
 #gradient{
   position: relative;
   bottom: 560px;
-  left: 28px;  
+  left: -7px;  
 }
 
 #gradient1{
     position: relative;
     bottom: 560px;
-    left: 588px;
+    left: 623px;
 }
 /*#gradient{
     position: absolute;

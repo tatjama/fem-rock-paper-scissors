@@ -18,7 +18,7 @@ function showRules(){
   }
   function pickHouse(){
       document.querySelector('#blank').style.display = "none";
-      document.querySelector('#house-card').style.display = "initial";
+      //document.querySelector('#house-card').style.display = "initial";
       document.querySelector('#house-card').style.display = "flex";
       showHouseCard();
       console.log(rules());
@@ -86,12 +86,18 @@ function showRules(){
     switch(rules()){
       case 'win':
       document.querySelector('.gradient').id = 'gradient';
+      document.getElementById('play-again').style.display = 'flex';
+      document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
       break;
       case 'lose':
       document.querySelector('.gradient').id = 'gradient1';
+      document.getElementById('play-again').style.display = 'flex';
+      document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp L o s e';
       break;
       default:
       document.querySelector('.gradient').id = '';
+      document.getElementById('play-again').style.display = 'flex';
+      document.querySelector('#play-again h2').innerHTML = ' E q u a l';
       break;
     }
   }
