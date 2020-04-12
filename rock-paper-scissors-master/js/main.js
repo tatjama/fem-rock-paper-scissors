@@ -21,8 +21,10 @@ function showRules(){
       document.querySelector('#house-card').style.display = "initial";
       document.querySelector('#house-card').style.display = "flex";
       showHouseCard();
-      rules();
-      
+      console.log(rules());
+     // console.log(result);
+     setTimeout(showResult, 2000);
+     //showResult();
   }
   function showHouseCard(){
       let x = Math.floor((Math.random() * 3) + 1);    
@@ -42,10 +44,10 @@ function showRules(){
       document.getElementById('house-card').className = 'icon ' + y;
 
   }
-  function rules(){
-    let result, player, house = '';
-    let player = document.getElementById('player-card').className.slice(5);
-    let house = document.getElementById('house-card').className.slice(5);    
+   function rules(){
+     let result, player, house = '';
+     player = document.getElementById('player-card').className.slice(5);
+     house = document.getElementById('house-card').className.slice(5);    
     
     switch(player){
       case 'paper':
@@ -74,8 +76,22 @@ function showRules(){
             }else{
             result = 'equal';
           }
-            break;
+            break;            
     }
-    console.log(result);
+    return result;
+    //console.log(result);
     
+  }
+  function showResult(){
+    switch(rules()){
+      case 'win':
+      document.querySelector('.gradient').id = 'gradient';
+      break;
+      case 'lose':
+      document.querySelector('.gradient').id = 'gradient1';
+      break;
+      default:
+      document.querySelector('.gradient').id = '';
+      break;
+    }
   }

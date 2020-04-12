@@ -193,6 +193,9 @@ h2{
 .game .rock{
     box-shadow: 0px 14px hsl(349, 71%, 52%);       
 }
+#play-again{
+    display: none;
+}
 .play-again p{
     color: hsl(349, 71%, 52%);
     font-size: 12px;
