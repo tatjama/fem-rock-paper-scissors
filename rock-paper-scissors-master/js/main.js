@@ -23,7 +23,7 @@ function showRules(){
       showHouseCard();
       console.log(rules());
      // console.log(result);
-     setTimeout(showResult, 2000);
+     setTimeout(showResult, 1000);
      //showResult();
   }
   function showHouseCard(){
