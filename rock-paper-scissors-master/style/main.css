@@ -201,7 +201,7 @@ h2{
 #play-again{
     display: none;
     margin: 0px 35px;
-    /**var 1*/
+    /**varijanta 1*/
     /*position: relative;
     top: 70px;*/
 }
@@ -307,6 +307,7 @@ h2{
     }
     .game{
         padding: 0px;
+        
     }
     .game p{
         font-size: 10px;
@@ -317,13 +318,30 @@ h2{
         align-items: center;
         justify-content: center;   
        z-index: 1;
-       margin-bottom: 100px;
+       margin-bottom: 100px;      
      }
      .game-div p{
          margin-top: 20px;
      }
     #play-again{
-        top: 300px;
+        flex-direction: column;
+        position: relative;
+        top: 225px;
+        width: 0px;
+        text-align: center;
+    }
+    .score.play-again{
+        width: 230px;
+        height: 50px;
+    }
+    #play-again h2{
+        font-size: 40px;
+        width: 230px;
+    }
+    #play-again p{
+        margin-top: 5px;
+        font-size: 12px;
+        color: hsl(237, 49%, 15%);
     }
 }
 #gradient{
