@@ -243,12 +243,12 @@ h2{
     top: 144px;
     left: 618px;
 }*/
-.gradient .one{
+/*.gradient .one{
     border-radius: 50%;
     background-color: violet;
     width: 280px;
     height: 280px;
-}
+}*/
 .gradient .two{
     border-radius: 50%;
     background-color: hsla(217, 16%, 45%, 0.2);
@@ -263,6 +263,14 @@ h2{
     width: 560px;
     height: 560px;
 }
+.gradient .four{
+    border-radius: 50%;
+    background-color: hsla(214, 47%, 23%, 0.2);
+    padding: 65px;
+    width: 700px;
+    height: 700px;
+}
+
 /**Interesting gradient effect***/
 
 /*.gradient .four{
@@ -271,13 +279,6 @@ h2{
     width: 640px;
     height: 640px;
 }*/
-.gradient .four{
-    border-radius: 50%;
-    background-color: hsla(214, 47%, 23%, 0.2);
-    padding: 65px;
-    width: 700px;
-    height: 700px;
-}
 @media screen and (max-width: 375px){
     .container{
         width: 375px;
@@ -413,10 +414,10 @@ h2{
           bottom: 590px;
           left: 100px;
       }
-    .gradient .one{
+    /*.gradient .one{
         width: 130px;
         height: 130px;
-    }
+    }*/
     .gradient .two{
         padding: 20px;
         width: 170px;
