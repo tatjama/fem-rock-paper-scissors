@@ -11,7 +11,7 @@ html, body{
 .container{
     background-color: hsl(237, 49%, 15%) ;
     width: 1366px;
-    height: 735px;
+    height: 728px;
     padding: 30px;
     overflow: hidden;
 }
@@ -248,7 +248,7 @@ h2{
     background-color: violet;
     width: 280px;
     height: 280px;
-}*/
+}
 .gradient .two{
     border-radius: 50%;
     background-color: hsla(217, 16%, 45%, 0.2);
