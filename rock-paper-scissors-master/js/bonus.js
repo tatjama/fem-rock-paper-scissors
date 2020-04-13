@@ -5,6 +5,7 @@ function bonusGame(){
     document.getElementById('bonus').style.display = 'none';
     document.getElementById('original').style.display = 'initial';
     document.querySelector('.second').style.display = 'none';
+    document.getElementById('bonus-intro').style.display = 'flex';
 }
 function originalGame(){
     document.getElementById('original').style.display = 'none';
@@ -12,6 +13,8 @@ function originalGame(){
     document.querySelector('#rules-image').src = './images/image-rules.svg';
     displayRulesImageOriginal(size);
     document.getElementById('bonus').style.display = 'initial';
+    document.querySelector('.second').style.display = 'flex';
+    document.getElementById('bonus-intro').style.display = "none";
 
 }
 

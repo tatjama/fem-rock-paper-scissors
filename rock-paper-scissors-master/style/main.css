@@ -90,6 +90,46 @@ p{
     justify-content: center;
     box-shadow: 0px 7px inset lightgray;
 }
+
+#bonus-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../images/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    display: none;
+}
+.bonus-first-row{
+    display: flex;
+    flex-direction: row;
+}
+.bonus-second-row{
+    display: flex;
+    flex-direction: row;
+}
+.icon-bonus{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-bonus-bg{
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px inset lightgray;
+}
+
 .paper{    
     background-color: hsl(230, 89%, 62%) ;
     box-shadow: 0px 10px hsla(230, 89%, 65%, 0.7) ;
@@ -98,6 +138,15 @@ p{
 .scissors{
     background-color:  hsl(39, 89%, 49%);
     box-shadow: 0px 10px hsla(40, 84%, 53%, 0.7);
+}
+.spock{
+    background-color: hsl(189, 59%, 53%);
+    box-shadow: 0px 10px hsla(189, 58%, 57%, 0.7);
+}
+.lizard{
+        background-color: hsl(261, 73%, 60%);
+        box-shadow: 0px 10px hsla(261, 72%, 63%, 0.7);
+    
 }
 .rock{
     background-color: hsl(349, 71%, 52%);
