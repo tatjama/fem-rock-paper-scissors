@@ -33,6 +33,9 @@ html, body{
     align-items: center;
     z-index: 1;
 }
+#original{
+    display: none;
+}
 .score{
     width: 150px;
     height: 100px;
