@@ -134,6 +134,7 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;    
+    margin-top: -65px;
 }
 h2{
     text-transform: uppercase;
@@ -247,7 +248,7 @@ h2{
     background-color: violet;
     width: 280px;
     height: 280px;
-}
+}*/
 .gradient .two{
     border-radius: 50%;
     background-color: hsla(217, 16%, 45%, 0.2);
