@@ -49,37 +49,16 @@ p{
     text-transform: uppercase;    
     font-size: 12px;
     font-weight: 700;
-    /*font-stretch: extra-expanded;*/
-    
-}
-.second{
-    background-image: url('../images/bg-triangle.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1;
-}
-.first-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;    
+    /*font-stretch: extra-expanded;*/    
 }
 .icon{   
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
     background-color:whitesmoke;    
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
-}
-.icon-bg{
-    width: 140px;
-    height: 140px;
+    }
+.icon-bg{    
     border-radius: 50%;
     background-color: whitesmoke;
     display: flex;
@@ -119,8 +98,6 @@ button{
     margin-top: -15px;   
     z-index: 1;
 }
-
-
 .rules{
     display: none;
     padding: 30px;
