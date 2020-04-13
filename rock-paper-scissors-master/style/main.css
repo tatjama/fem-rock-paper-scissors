@@ -329,6 +329,7 @@ h2{
         top: 225px;
         width: 0px;
         text-align: center;
+        margin: 0px;
     }
     .score.play-again{
         width: 230px;
