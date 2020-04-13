@@ -1,9 +1,20 @@
+/*****START SCORE ONLOAD. SESSION VALUE IS START SCORE */
+function storageScore(){
+  // alert(sessionStorage.getItem('score'));      
+    if( isNaN(parseInt( sessionStorage.getItem('score') ))){
+       document.querySelector('.score h1').innerHTML = 0;
+     }else{
+       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
+     }
+ }
+/*****RULES SHOW AND HIDE */
 function showRules(){
     document.querySelector(".rules").style.display = "inherit";
   }
   function hideRules(){
     document.querySelector(".rules").style.display = "none";
   }
+ /*******GAME LOGIC */ 
   function pickCard(e){
       var x = e.className;
       console.log(x);
@@ -78,15 +89,12 @@ function showRules(){
     return result;
     
   }
-  function showResult(){
+  /****GAME RESULT SHOW AND SAVE IN SESSION */
+  function showResult(){    
 
-    
+    var score = parseInt(document.querySelector('.score h1').innerHTML);    
 
-    var score = parseInt(document.querySelector('.score h1').innerHTML);
-    console.log(score);
-    
-
-    //ssesion storage try
+    //ssesion storage 
     sessionStorage.setItem('score', score );
     if(sessionStorage){  
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')); 
@@ -97,14 +105,12 @@ function showRules(){
       case 'win':      
       document.querySelector('.gradient').id = 'gradient';
       document.getElementById('play-again').style.display = 'flex';
-      //document.getElementById('play-again').style.display = 'initial';
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
       break;
       case 'lose':      
       document.querySelector('.gradient').id = 'gradient1';
       document.getElementById('play-again').style.display = 'flex';
-      //document.getElementById('play-again').style.display = 'initial';
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp L o s e';
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) - 1;
       break;
@@ -115,8 +121,9 @@ function showRules(){
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
       break;
     }
+    //NEW SCORE WRITE IN SESSION
     sessionStorage.setItem('score', document.querySelector('.score h1').innerHTML)
-    alert('u sesiji je score = ' +sessionStorage.getItem('score'));
+   
   }
   function playAgain(){
     document.querySelector('.second').style.display = "flex";
