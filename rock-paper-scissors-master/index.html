@@ -19,7 +19,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body onload="storageScore()">
 
  <div class="container">
 <div class="main">
@@ -29,9 +29,20 @@
     </div>
     <div class="score">
       <p >S c o r e</p>
-      <h1>0</h1>
+      <h1></h1>
     </div>
   </div>
+  <script>
+    function storageScore(){
+      alert(sessionStorage.getItem('score'));
+      alert('ucitao sam');
+       if( isNaN(parseInt( sessionStorage.getItem('score') ))){
+          document.querySelector('.score h1').innerHTML = 0;
+        }else{
+          document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
+        }
+    }
+  </script>
   <!--START DIV-->
   <div class="section second">
     <div class="first-row">

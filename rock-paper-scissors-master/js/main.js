@@ -83,9 +83,16 @@ function showRules(){
     
 
     var score = parseInt(document.querySelector('.score h1').innerHTML);
+    console.log(score);
+    
 
     //ssesion storage try
     sessionStorage.setItem('score', score );
+    if(sessionStorage){  
+      document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')); 
+    }else{
+      document.querySelector('.score h1').innerHTML = 0;
+    } 
     switch(rules()){
       case 'win':      
       document.querySelector('.gradient').id = 'gradient';
@@ -108,6 +115,8 @@ function showRules(){
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
       break;
     }
+    sessionStorage.setItem('score', document.querySelector('.score h1').innerHTML)
+    alert('u sesiji je score = ' +sessionStorage.getItem('score'));
   }
   function playAgain(){
     document.querySelector('.second').style.display = "flex";
