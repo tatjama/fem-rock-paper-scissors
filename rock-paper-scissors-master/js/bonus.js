@@ -4,6 +4,7 @@ function bonusGame(){
     displayRulesImageBonus(size);
     document.getElementById('bonus').style.display = 'none';
     document.getElementById('original').style.display = 'initial';
+    document.querySelector('.second').style.display = 'none';
 }
 function originalGame(){
     document.getElementById('original').style.display = 'none';
