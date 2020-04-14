@@ -374,6 +374,7 @@ h2{
         margin: 105px 27px 14px 27px;
         
     }
+
     .icon-bg, .game .icon-bg{
         width: 100px;
         height: 100px;
@@ -381,6 +382,23 @@ h2{
     .icon img{
         width: 45px;
         height: auto;
+    }
+    .icon-bonus{
+        width: 95px;
+        height: 95px;
+        margin: 17px;
+    }
+    .icon-bonus-bg{
+        width: 72px;
+        height: 72px;
+    }
+    .icon-bonus img{
+        width: 32px;
+        height: auto;
+    }
+    .icon-bonus.scissors{
+        position: relative;
+        bottom: 0px;
     }
     .paper, .game .paper{
         box-shadow: 0px 6px hsla(230, 89%, 65%, 0.7);
@@ -401,6 +419,9 @@ h2{
     .second{
         background-size: 160px;
        background-position-y: 170px;
+    }
+    #bonus-intro{
+        background-size: 200px;
     }
     .third{
         text-align: center;
