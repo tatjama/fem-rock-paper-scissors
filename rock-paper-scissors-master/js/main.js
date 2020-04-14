@@ -10,27 +10,29 @@ function storageScore(){
 /*****RULES SHOW AND HIDE */
 function showRules(){
     document.querySelector(".rules").style.display = "inherit";
+    document.querySelector('.gradient').style.display= 'none';
   }
   function hideRules(){
     document.querySelector(".rules").style.display = "none";
+    document.querySelector('.gradient').style.display= 'initial';
   }
  /*******GAME LOGIC */ 
   function pickCard(e){
       var x = e.className;
-      console.log(x);
+      //console.log(x);
       y = x.slice(5);
-      console.log(y);
+      //console.log(y);
       document.getElementById('player-card-image').src = './images/icon-'+ y +'.svg';
       document.querySelector('.second').style.display = "none";
       document.querySelector('.start-game').style.display = "initial";
       document.getElementById('player-card').className = x;
-      
+      document.querySelector('.gradient').style.display = 'initial';
   }
   function pickHouse(){
       document.querySelector('#blank').style.display = "none";
       document.querySelector('#house-card').style.display = "flex";
       showHouseCard();
-      console.log(rules());
+      //console.log(rules());
      setTimeout(showResult, 1000);
      
   }
