@@ -27,6 +27,7 @@ function showRules(){
       document.querySelector('.start-game').style.display = "initial";
       document.getElementById('player-card').className = x;
       document.querySelector('.gradient').style.display = 'initial';
+      document.getElementById('blank').addEventListener('click', pickHouse);
   }
   function pickHouse(){
       document.querySelector('#blank').style.display = "none";
