@@ -96,7 +96,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+   /* justify-content: space-evenly;*/
     background-image: url('../images/bg-pentagon.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -106,11 +106,12 @@ p{
 .bonus-first-row{
     display: flex;
     flex-direction: row;
-    margin-top: 90px;
+    margin-top: 150px;
 }
 .bonus-second-row{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .icon-bonus{
     width: 140px;
@@ -120,8 +121,9 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: 20px 20px;
 }
+
 .icon-bonus-bg{
     width: 107px;
     height: 107px;
@@ -133,8 +135,8 @@ p{
     box-shadow: 0px 5px inset lightgray;
 }
 .icon-bonus.scissors{
-    margin: -43px -10px -64px -10px;
-
+    position: relative;
+    bottom: 125px;
 }
 .paper{    
     background-color: hsl(230, 89%, 62%) ;

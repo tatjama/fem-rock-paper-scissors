@@ -3,7 +3,8 @@ function displayRulesImageBonus(size){
   if(size.matches){
       document.querySelector('.rules').style.height = '765px';
   }else{
-      document.querySelector('.rules').style.height = '470px';
+      document.querySelector('.rules').style.height = '460px';
+      document.querySelector('.rules').style.width = '405px';
   }
 }      
 function displayRulesImageOriginal(size){
@@ -11,6 +12,7 @@ if(size.matches){
   document.querySelector('.rules').style.height = '765px';
 }else{
   document.querySelector('.rules').style.height = '400px';
+  document.querySelector('.rules').style.width = '385px';
 }
 }
 
