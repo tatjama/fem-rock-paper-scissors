@@ -46,13 +46,7 @@ function originalGame(){
 }
  
 
-function pickHouseBonus(){  
-  document.querySelector('#blank').style.display = "none";
-  document.querySelector('#house-card').style.display = "flex";
-  showHouseCard(5);
-  //console.log(rules());
-  setTimeout(showResult, 1000); 
-}
+
 
 function playAgainBonus(){  
   document.querySelector('#bonus-intro').style.display = "flex";

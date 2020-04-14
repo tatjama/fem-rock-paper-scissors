@@ -1,6 +1,7 @@
 /*****START SCORE ONLOAD. SESSION VALUE IS START SCORE */
 function storageScore(){
-  // alert(sessionStorage.getItem('score'));      
+  // alert(sessionStorage.getItem('score')); 
+    
     if( isNaN(parseInt( sessionStorage.getItem('score') ))){
        document.querySelector('.score h1').innerHTML = 0;
      }else{
@@ -39,7 +40,14 @@ function showRules(){
       //console.log(rules());
      setTimeout(showResult, 1000);     
   }
-  
+  function pickHouseBonus(){  
+    document.querySelector('#blank').style.display = "none";
+    document.querySelector('#house-card').style.display = "flex";
+    showHouseCard(5);
+    //console.log(rules());
+    setTimeout(showResult, 1000); 
+  }
+
   function showHouseCard(n){
     let x = Math.floor((Math.random() * n) + 1);    
     let y = "";
