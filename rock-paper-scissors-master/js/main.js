@@ -16,20 +16,24 @@ function showRules(){
     document.querySelector(".rules").style.display = "none";
     document.querySelector('.gradient').style.display= 'initial';
   }
- /*******GAME LOGIC */ 
-  function pickCard(e){
+  
+ /*******GAME LOGIC , pick player card and bonus player card*/ 
+  function pickCard(e, b, c, d, g){
       var x = e.className;
       //console.log(x);
-      y = x.slice(5);
+      y = x.slice(b);
       //console.log(y);
       document.getElementById('player-card-image').src = './images/icon-'+ y +'.svg';
-      document.querySelector('.second').style.display = "none";
+      document.querySelector(g).style.display = "none";
       document.querySelector('.start-game').style.display = "initial";
       document.getElementById('player-card').className = 'icon ' + y;
       document.querySelector('.gradient').style.display = 'initial';
-      document.getElementById('blank').addEventListener('click', pickHouse);
-      document.getElementById('play-again').addEventListener('click', playAgain);
+      document.getElementById('blank').addEventListener('click', c);
+      document.getElementById('play-again').addEventListener('click', d);
   }
+
+  
+  
   function pickHouse(){
       document.querySelector('#blank').style.display = "none";
       document.querySelector('#house-card').style.display = "flex";
@@ -93,11 +97,9 @@ function showRules(){
     return result;
     
   }
-  /****GAME RESULT SHOW AND SAVE IN SESSION */
+  /****GAME RESULT SHOW AND SAVE IN SESSION - SAME FUNCTION IN BONUS*/
   function showResult(){    
-
-    var score = parseInt(document.querySelector('.score h1').innerHTML);    
-
+    var score = parseInt(document.querySelector('.score h1').innerHTML);
     //ssesion storage 
     sessionStorage.setItem('score', score );
     if(sessionStorage){  
@@ -105,30 +107,28 @@ function showRules(){
     }else{
       document.querySelector('.score h1').innerHTML = 0;
     } 
+    document.getElementById('play-again').style.display = 'flex';
     switch(rules()){
       case 'win':      
-      document.querySelector('.gradient').id = 'gradient';
-      document.getElementById('play-again').style.display = 'flex';
+      document.querySelector('.gradient').id = 'gradient';      
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
       break;
       case 'lose':      
       document.querySelector('.gradient').id = 'gradient1';
-      document.getElementById('play-again').style.display = 'flex';
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp L o s e';
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) - 1;
       break;
       default:
       document.querySelector('.gradient').id = '';
-      document.getElementById('play-again').style.display = 'flex';
       document.querySelector('#play-again h2').innerHTML = ' E q u a l';
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
       break;
     }
-    //NEW SCORE WRITE IN SESSION
-    sessionStorage.setItem('score', document.querySelector('.score h1').innerHTML)
-   
+    //new score write in section
+    sessionStorage.setItem('score', document.querySelector('.score h1').innerHTML)   
   }
+
   function playAgain(){
     document.querySelector('.second').style.display = "flex";
     document.getElementById('play-again').style.display = 'none';

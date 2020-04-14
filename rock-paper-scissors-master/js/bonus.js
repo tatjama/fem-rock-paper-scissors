@@ -45,11 +45,11 @@ function originalGame(){
    document.getElementById('play-again').removeEventListener('click', playAgainBonus);
 }
  
-function pickCardBonus(e){
+/*function pickCardBonus(e){
   var x = e.className;
-  console.log(x);
+  //console.log(x);
   y = x.slice(11);
-  console.log(y);
+  //console.log(y);
   document.getElementById('player-card-image').src = './images/icon-'+ y +'.svg';
   document.querySelector('#bonus-intro').style.display = "none";
   document.querySelector('.start-game').style.display = "initial";
@@ -57,7 +57,8 @@ function pickCardBonus(e){
   document.querySelector('.gradient').style.display = 'initial';  
    document.getElementById('blank').addEventListener('click', pickHouseBonus);
    document.getElementById('play-again').addEventListener('click', playAgainBonus);
-}
+}*/
+
 function pickHouseBonus(){  
   document.querySelector('#blank').style.display = "none";
   document.querySelector('#house-card').style.display = "flex";
@@ -88,42 +89,7 @@ function showHouseCardBonus(){
   document.getElementById('house-card-image').src = './images/icon-' + y + '.svg';
   document.getElementById('house-card').className = 'icon ' + y;
 }
-/***same function */
-function showResult(){    
 
-  var score = parseInt(document.querySelector('.score h1').innerHTML);    
-
-  //ssesion storage 
-  sessionStorage.setItem('score', score );
-  if(sessionStorage){  
-    document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')); 
-  }else{
-    document.querySelector('.score h1').innerHTML = 0;
-  } 
-  switch(rulesBonus()){
-    case 'win':      
-    document.querySelector('.gradient').id = 'gradient';
-    document.getElementById('play-again').style.display = 'flex';
-    document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
-    document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
-    break;
-    case 'lose':      
-    document.querySelector('.gradient').id = 'gradient1';
-    document.getElementById('play-again').style.display = 'flex';
-    document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp L o s e';
-    document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) - 1;
-    break;
-    default:
-    document.querySelector('.gradient').id = '';
-    document.getElementById('play-again').style.display = 'flex';
-    document.querySelector('#play-again h2').innerHTML = ' E q u a l';
-    document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
-    break;
-  }
-  //NEW SCORE WRITE IN SESSION
-  sessionStorage.setItem('score', document.querySelector('.score h1').innerHTML)
- 
-}
 function playAgainBonus(){  
   document.querySelector('#bonus-intro').style.display = "flex";
   document.querySelector('.second').style.display = 'none';

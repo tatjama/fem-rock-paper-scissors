@@ -45,18 +45,18 @@
   <!-- ORIGINAL INTRO GAME  DIV-->
   <div class="section second">
     <div class="first-row">
-    <div onclick="pickCard(this)"  class="icon paper">
+    <div onclick="pickCard(this, 5, pickHouse, playAgain, '.second')"  class="icon paper">
       <div class="icon-bg">
       <img src="./images/icon-paper.svg">
     </div>
     </div>
-    <div onclick="pickCard(this)"  class="icon scissors">
+    <div onclick="pickCard(this, 5, pickHouse, playAgain, '.second')"  class="icon scissors">
       <div class="icon-bg">
         <img src="./images/icon-scissors.svg">
     </div>
     </div>
   </div>
-    <div onclick="pickCard(this)"  class="icon rock">
+    <div onclick="pickCard(this, 5, pickHouse, playAgain, '.second')"  class="icon rock">
       <div class="icon-bg">
       <img src="./images/icon-rock.svg">
     </div>
@@ -70,17 +70,17 @@
 
   <div class="bonus-first-row">
     
-    <div onclick="pickCardBonus(this)" class="icon-bonus spock">
+    <div onclick="pickCard(this, 11, pickHouseBonus,  playAgainBonus, '#bonus-intro')" class="icon-bonus spock">
       <div class="icon-bonus-bg">
         <img src="./images//icon-spock.svg">
       </div>
     </div>
-    <div onclick="pickCardBonus(this)" class="icon-bonus scissors">
+    <div onclick="pickCard(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus scissors">
       <div class="icon-bonus-bg">
         <img src="./images//icon-scissors.svg">
       </div>
     </div>
-    <div onclick="pickCardBonus(this)" class="icon-bonus paper">
+    <div onclick="pickCard(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus paper">
       <div class="icon-bonus-bg">
         <img src="./images//icon-paper.svg">
       </div>
@@ -90,12 +90,12 @@
 
   <div class="bonus-second-row">
 
-    <div onclick="pickCardBonus(this)" class="icon-bonus lizard">
+    <div onclick="pickCard(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus lizard">
       <div class="icon-bonus-bg">
         <img src="./images//icon-lizard.svg">
       </div>
     </div>
-    <div onclick="pickCardBonus(this)" class="icon-bonus rock">
+    <div onclick="pickCard(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus rock">
       <div class="icon-bonus-bg">
         <img src="./images//icon-rock.svg">
       </div>
