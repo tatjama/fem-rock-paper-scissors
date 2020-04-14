@@ -69,6 +69,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
+    margin-bottom: -50px;
 }
 .icon{   
     width: 200px;
@@ -105,6 +106,7 @@ p{
 .bonus-first-row{
     display: flex;
     flex-direction: row;
+    margin-top: 90px;
 }
 .bonus-second-row{
     display: flex;
@@ -118,6 +120,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 25px;
 }
 .icon-bonus-bg{
     width: 107px;
@@ -129,7 +132,10 @@ p{
     justify-content: center;
     box-shadow: 0px 5px inset lightgray;
 }
+.icon-bonus.scissors{
+    margin: -43px -10px -64px -10px;
 
+}
 .paper{    
     background-color: hsl(230, 89%, 62%) ;
     box-shadow: 0px 10px hsla(230, 89%, 65%, 0.7) ;
@@ -144,14 +150,14 @@ p{
     box-shadow: 0px 10px hsla(189, 58%, 57%, 0.7);
 }
 .lizard{
-        background-color: hsl(261, 73%, 60%);
-        box-shadow: 0px 10px hsla(261, 72%, 63%, 0.7);
-    
+    background-color: hsl(261, 73%, 60%);
+    box-shadow: 0px 10px hsla(261, 72%, 63%, 0.7);
+        
 }
 .rock{
     background-color: hsl(349, 71%, 52%);
     box-shadow: 0px 10px  hsla(349, 70%, 56%, 0.7);
-    margin: 0px;    
+       
 }
 
 .third{
@@ -357,6 +363,9 @@ h2{
     h1{
         font-size: 30px;
     }
+    .first-row{
+        margin-bottom: -70px;
+    }
     .second .icon, .game .icon, #house-card{
         width: 130px;
         height: 130px;
@@ -379,7 +388,7 @@ h2{
     }
     .icon.rock, .game .rock{
         box-shadow: 0px 6px hsla(349, 70%, 56%, 0.7);
-        margin: 0px;
+        
     }
     .game .icon-bg{       
         box-shadow: 0px 5px inset lightgray;

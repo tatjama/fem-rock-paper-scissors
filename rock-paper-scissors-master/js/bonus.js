@@ -29,6 +29,7 @@ function bonusGame(){
     document.getElementById('blank').removeEventListener('click', pickHouse);
    // document.getElementById('play-again').removeEventListener('click', playAgain)
 }
+
 /**Change play mode to original game */
 function originalGame(){
    playAgain();
@@ -44,9 +45,6 @@ function originalGame(){
    document.getElementById('blank').removeEventListener('click', pickHouseBonus);
    document.getElementById('play-again').removeEventListener('click', playAgainBonus);
 }
- 
-
-
 
 function playAgainBonus(){  
   document.querySelector('#bonus-intro').style.display = "flex";
