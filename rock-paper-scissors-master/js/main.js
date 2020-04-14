@@ -16,7 +16,7 @@ function showRules(){
     document.querySelector(".rules").style.display = "none";
     document.querySelector('.gradient').style.display= 'initial';
   }
-  
+
  /*******GAME LOGIC , pick player card and bonus player card*/ 
   function pickCard(e, b, c, d, g){
       var x = e.className;
@@ -30,36 +30,40 @@ function showRules(){
       document.querySelector('.gradient').style.display = 'initial';
       document.getElementById('blank').addEventListener('click', c);
       document.getElementById('play-again').addEventListener('click', d);
-  }
-
-  
+  } 
   
   function pickHouse(){
       document.querySelector('#blank').style.display = "none";
       document.querySelector('#house-card').style.display = "flex";
-      showHouseCard();
+      showHouseCard(3);
       //console.log(rules());
-     setTimeout(showResult, 1000);
-     
+     setTimeout(showResult, 1000);     
   }
-  function showHouseCard(){
-      let x = Math.floor((Math.random() * 3) + 1);    
-      let y = "";
-      switch(x){
-        case 1: 
-        y = 'paper';
-        break;
-        case 2: 
-        y = 'scissors';        
-        break;
-        case 3: 
-        y = 'rock';
-        break;
-      }
-      document.getElementById('house-card-image').src = './images/icon-' + y + '.svg';
-      document.getElementById('house-card').className = 'icon ' + y;
-
+  
+  function showHouseCard(n){
+    let x = Math.floor((Math.random() * n) + 1);    
+    let y = "";
+    switch(x){
+      case 1: 
+      y = 'paper';
+      break;
+      case 2: 
+      y = 'scissors';        
+      break;
+      case 3: 
+      y = 'rock';
+      break;
+      case 4:
+      y = 'spock';
+      break;
+      case 5:
+      y = 'lizard';
+      break;  
+    }
+    document.getElementById('house-card-image').src = './images/icon-' + y + '.svg';
+    document.getElementById('house-card').className = 'icon ' + y;
   }
+  
    function rules(){
      let result, player, house = '';
      player = document.getElementById('player-card').className.slice(5);

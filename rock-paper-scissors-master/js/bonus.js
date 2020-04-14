@@ -45,49 +45,13 @@ function originalGame(){
    document.getElementById('play-again').removeEventListener('click', playAgainBonus);
 }
  
-/*function pickCardBonus(e){
-  var x = e.className;
-  //console.log(x);
-  y = x.slice(11);
-  //console.log(y);
-  document.getElementById('player-card-image').src = './images/icon-'+ y +'.svg';
-  document.querySelector('#bonus-intro').style.display = "none";
-  document.querySelector('.start-game').style.display = "initial";
-  document.getElementById('player-card').className ='icon ' +y;
-  document.querySelector('.gradient').style.display = 'initial';  
-   document.getElementById('blank').addEventListener('click', pickHouseBonus);
-   document.getElementById('play-again').addEventListener('click', playAgainBonus);
-}*/
 
 function pickHouseBonus(){  
   document.querySelector('#blank').style.display = "none";
   document.querySelector('#house-card').style.display = "flex";
-  showHouseCardBonus();
+  showHouseCard(5);
   //console.log(rules());
   setTimeout(showResult, 1000); 
-}
-function showHouseCardBonus(){
-  let x = Math.floor((Math.random() * 5) + 1);    
-  let y = "";
-  switch(x){
-    case 1: 
-    y = 'paper';
-    break;
-    case 2: 
-    y = 'scissors';        
-    break;
-    case 3: 
-    y = 'rock';
-    break;
-    case 4:
-    y = 'spock';
-    break;
-    case 5:
-    y = 'lizard';
-    break;  
-  }
-  document.getElementById('house-card-image').src = './images/icon-' + y + '.svg';
-  document.getElementById('house-card').className = 'icon ' + y;
 }
 
 function playAgainBonus(){  
