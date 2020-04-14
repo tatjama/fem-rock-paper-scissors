@@ -28,6 +28,7 @@ function showRules(){
       document.getElementById('player-card').className = x;
       document.querySelector('.gradient').style.display = 'initial';
       document.getElementById('blank').addEventListener('click', pickHouse);
+      document.getElementById('play-again').addEventListener('click', playAgain);
   }
   function pickHouse(){
       document.querySelector('#blank').style.display = "none";

@@ -41,6 +41,7 @@ function originalGame(){
     //document.querySelector('.start-game').style.display = 'none';
    // document.querySelector('.gradient').style.display = 'initial';
    document.getElementById('blank').removeEventListener('click', pickHouseBonus);
+   document.getElementById('play-again').removeEventListener('click', playAgain);
 }
  
 function pickCardBonus(e){
@@ -52,9 +53,9 @@ function pickCardBonus(e){
   document.querySelector('#bonus-intro').style.display = "none";
   document.querySelector('.start-game').style.display = "initial";
   document.getElementById('player-card').className ='icon ' +y;
-  document.querySelector('.gradient').style.display = 'initial';
-  
+  document.querySelector('.gradient').style.display = 'initial';  
    document.getElementById('blank').addEventListener('click', pickHouseBonus);
+   document.getElementById('play-again').addEventListener('click', playAgainBonus);
 }
 function pickHouseBonus(){
   alert('new house')
@@ -62,6 +63,8 @@ function pickHouseBonus(){
   document.querySelector('#house-card').style.display = "flex";
   showHouseCard();
   console.log(rules());
- setTimeout(showResult, 1000);*/
- 
+ setTimeout(showResult, 1000);*/ 
+}
+function playAgainBonus(){
+  alert('play again bonus');
 }
