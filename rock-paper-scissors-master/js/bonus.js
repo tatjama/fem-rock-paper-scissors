@@ -59,11 +59,35 @@ function pickCardBonus(e){
 }
 function pickHouseBonus(){
   alert('new house')
-  /*document.querySelector('#blank').style.display = "none";
+  document.querySelector('#blank').style.display = "none";
   document.querySelector('#house-card').style.display = "flex";
-  showHouseCard();
-  console.log(rules());
- setTimeout(showResult, 1000);*/ 
+  showHouseCardBonus();
+  //console.log(rules());
+ setTimeout(showResult, 1000); 
+}
+function showHouseCardBonus(){
+  let x = Math.floor((Math.random() * 5) + 1);    
+  let y = "";
+  switch(x){
+    case 1: 
+    y = 'paper';
+    break;
+    case 2: 
+    y = 'scissors';        
+    break;
+    case 3: 
+    y = 'rock';
+    break;
+    case 4:
+    y = 'spock';
+    break;
+    case 5:
+    y = 'lizard';
+    break;  
+  }
+  document.getElementById('house-card-image').src = './images/icon-' + y + '.svg';
+  document.getElementById('house-card').className = 'icon ' + y;
+
 }
 function playAgainBonus(){
   alert('play again bonus');

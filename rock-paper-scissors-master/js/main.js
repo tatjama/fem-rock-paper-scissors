@@ -25,7 +25,7 @@ function showRules(){
       document.getElementById('player-card-image').src = './images/icon-'+ y +'.svg';
       document.querySelector('.second').style.display = "none";
       document.querySelector('.start-game').style.display = "initial";
-      document.getElementById('player-card').className = x;
+      document.getElementById('player-card').className = 'icon ' + y;
       document.querySelector('.gradient').style.display = 'initial';
       document.getElementById('blank').addEventListener('click', pickHouse);
       document.getElementById('play-again').addEventListener('click', playAgain);
