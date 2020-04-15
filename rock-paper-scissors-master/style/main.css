@@ -10,6 +10,7 @@ html, body{
     }
 .container{
     background-color: hsl(237, 49%, 15%) ;
+    background-color: hsla(229, 25%, 31%, 0.2);
     width: 1366px;
     height: 728px;
     padding: 30px;
@@ -344,7 +345,7 @@ h2{
 @media screen and (max-width: 375px){
     .container{
         width: 375px;
-        height: 750px;
+        height: 765px;
     }
     .first{
         width: 317px;
@@ -398,11 +399,15 @@ h2{
     }
     .icon-bonus.scissors{
         position: relative;
-        bottom: 75px;
+        bottom: 80px;
+    }
+    .bonus-first-row{
+        margin-top: 165px;
     }
     .bonus-first-row .icon-bonus{
         margin: 15px 7px;
     }
+    
     .paper, .game .paper{
         box-shadow: 0px 6px hsla(230, 89%, 65%, 0.7);
     }
@@ -424,11 +429,12 @@ h2{
        background-position-y: 170px;
     }
     #bonus-intro{
-        background-size: 200px;
+        background-size: 216px;
+        background-position-y: 140px;
     }
     .third{
         text-align: center;
-        margin-top: 150px;
+        margin-top: 135px;
         margin-bottom: 50px;
     }
     button{
@@ -438,7 +444,7 @@ h2{
     .rules{
         width: 377px;
         height: 765px;
-        margin-top: -20px;
+        margin-top: -41px;
     
     }
     .rules .first-row{
@@ -448,7 +454,7 @@ h2{
     }
     .rules .first-row img{
         position: relative;
-        top: 430px;
+        top: 450px;
     }
     h2{
         margin-bottom: 100px;
