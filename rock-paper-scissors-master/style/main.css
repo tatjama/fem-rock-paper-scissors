@@ -199,7 +199,7 @@ button{
 }
 h2{
     text-transform: uppercase;
-    margin-bottom: 38px;
+    margin-bottom: 95px;
     font-size: 28px;
 }
 
@@ -443,7 +443,7 @@ h2{
     }
     .rules{
         width: 377px;
-        height: 765px;
+        height: 790px;
         margin-top: -50px;
     
     }
@@ -454,7 +454,7 @@ h2{
     }
     .rules .first-row img{
         position: relative;
-        top: 450px;
+        top: 460px;
     }
     h2{
         margin-bottom: 100px;
@@ -472,7 +472,7 @@ h2{
         align-items: center;
         justify-content: center;   
        z-index: 1;
-       margin-bottom: 98px;      
+       margin-bottom: 148px;      
      }
      .game-div p{
          margin-top: 20px;
@@ -500,13 +500,13 @@ h2{
     }
     #gradient{
         position: relative;
-        bottom: 560px;
+        bottom: 610px;
         left: -100px;  
       }
       
       #gradient1{
           position: relative;
-          bottom: 560px;
+          bottom: 610px;
           left: 85px;
       }
     /*.gradient .one{
