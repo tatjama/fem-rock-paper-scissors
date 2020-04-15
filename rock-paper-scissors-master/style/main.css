@@ -398,7 +398,10 @@ h2{
     }
     .icon-bonus.scissors{
         position: relative;
-        bottom: 0px;
+        bottom: 75px;
+    }
+    .bonus-first-row .icon-bonus{
+        margin: 15px 7px;
     }
     .paper, .game .paper{
         box-shadow: 0px 6px hsla(230, 89%, 65%, 0.7);
