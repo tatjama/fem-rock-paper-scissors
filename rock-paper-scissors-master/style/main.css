@@ -281,20 +281,21 @@ h2{
     color: whitesmoke;
     margin-bottom: 25px;
 }
+/***proba***/
 .gradient{
-
+   
 }
 
 #gradient{
   position: relative;
   bottom: 540px;
-  left: -7px;  
+  left: -7px;   
 }
 
 #gradient1{
     position: relative;
     bottom: 540px;
-    left: 623px;
+    left: 623px;    
 }
 /*#gradient{
     position: absolute;
@@ -332,6 +333,7 @@ h2{
     padding: 65px;
     width: 700px;
     height: 700px;
+
 }
 
 /**Interesting gradient effect***/
