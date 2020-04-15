@@ -26,10 +26,7 @@ function bonusGame(){
     document.getElementById('original').style.display = 'initial';
     document.querySelector('.second').style.display = 'none';
     document.getElementById('bonus-intro').style.display = 'flex';
-    //document.querySelector('.start-game').style.display = 'none';
-    document.querySelector('.gradient').style.display= 'none';
     document.getElementById('blank').removeEventListener('click', pickHouse);
-   // document.getElementById('play-again').removeEventListener('click', playAgain)
 }
 
 /**Change play mode to original game */
@@ -40,22 +37,14 @@ function originalGame(){
     document.querySelector('#rules-image').src = './images/image-rules.svg';
     displayRulesImageOriginal(size);
     document.getElementById('bonus').style.display = 'initial';
-    //document.querySelector('.second').style.display = 'flex';
     document.getElementById('bonus-intro').style.display = "none";
-    //document.querySelector('.start-game').style.display = 'none';
-   // document.querySelector('.gradient').style.display = 'initial';
    document.getElementById('blank').removeEventListener('click', pickHouseBonus);
    document.getElementById('play-again').removeEventListener('click', playAgainBonus);
 }
 
 function playAgainBonus(){  
   document.querySelector('#bonus-intro').style.display = "flex";
-  document.querySelector('.second').style.display = 'none';
-     /*document.getElementById('play-again').style.display = 'none';
-    document.querySelector('.gradient').id = '';
-    document.getElementById('house-card').style.display = "none";
-    document.getElementById('blank').style.display = "flex";
-    document.querySelector('.start-game').style.display = "none";*/
+  document.querySelector('.second').style.display = 'none';    
 }
 function rulesBonus(){
   let result, player, house = '';

@@ -11,11 +11,9 @@ function storageScore(){
 /*****RULES SHOW AND HIDE */
 function showRules(){
     document.querySelector(".rules").style.display = "inherit";
-    document.querySelector('.gradient').style.display= 'none';
   }
   function hideRules(){
     document.querySelector(".rules").style.display = "none";
-    document.querySelector('.gradient').style.display= 'initial';
   }
 
  /*******GAME LOGIC , pick player card and bonus player card*/ 
@@ -28,7 +26,6 @@ function showRules(){
       document.querySelector(g).style.display = "none";
       document.querySelector('.start-game').style.display = "initial";
       document.getElementById('player-card').className = 'icon ' + y;
-      document.querySelector('.gradient').style.display = 'initial';
       document.getElementById('blank').addEventListener('click', c);
       document.getElementById('play-again').addEventListener('click', d);
   } 
@@ -69,7 +66,7 @@ function showRules(){
       break;  
     }
     document.getElementById('house-card-image').src = './images/icon-' + y + '.svg';
-    document.getElementById('house-card').className = 'icon ' + y;
+    document.getElementById('house-card').className = 'icon ' + y;    
   }
   
    function rules(){
@@ -125,11 +122,13 @@ function showRules(){
       document.querySelector('.gradient').id = 'gradient';      
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
+      document.querySelector('.gradient').style.display = 'initial';
       break;
       case 'lose':      
       document.querySelector('.gradient').id = 'gradient1';
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp L o s e';
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) - 1;
+      document.querySelector('.gradient').style.display = 'initial';
       break;
       default:
       document.querySelector('.gradient').id = '';
@@ -145,6 +144,7 @@ function showRules(){
     document.querySelector('.second').style.display = "flex";
     document.getElementById('play-again').style.display = 'none';
     document.querySelector('.gradient').id = '';
+    document.querySelector('.gradient').style.display = 'none';
     document.getElementById('house-card').style.display = "none";
     document.getElementById('blank').style.display = "flex";
     document.querySelector('.start-game').style.display = "none"; 

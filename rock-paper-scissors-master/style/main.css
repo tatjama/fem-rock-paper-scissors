@@ -3,14 +3,13 @@
     margin: 0px;
     padding: 0px;
 }
-html, body{
-     
+html, body{     
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 16px;    
     }
 .container{
-    background-color: hsl(237, 49%, 15%) ;
-    background-color: hsla(229, 25%, 31%, 0.2);
+    background-color: hsl(238, 61%, 22%) ;
+    /*background-color: hsla(229, 25%, 31%, 0.2);*/
     width: 1366px;
     height: 728px;
     padding: 43px;
@@ -53,8 +52,6 @@ p{
     text-transform: uppercase;    
     font-size: 12px;
     font-weight: 700;
-    /*font-stretch: extra-expanded;*/
-    
 }
 .second{
     background-image: url('../images/bg-triangle.svg');
@@ -92,12 +89,10 @@ p{
     justify-content: center;
     box-shadow: 0px 7px inset lightgray;
 }
-
 #bonus-intro{
     display: flex;
     flex-direction: column;
     align-items: center;
-   /* justify-content: space-evenly;*/
     background-image: url('../images/bg-pentagon.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -124,7 +119,6 @@ p{
     align-items: center;
     margin: 20px 20px;
 }
-
 .icon-bonus-bg{
     width: 107px;
     height: 107px;
@@ -143,7 +137,6 @@ p{
     background-color: hsl(230, 89%, 62%) ;
     box-shadow: 0px 10px hsla(230, 89%, 65%, 0.7) ;
 }
-
 .scissors{
     background-color:  hsl(39, 89%, 49%);
     box-shadow: 0px 10px hsla(40, 84%, 53%, 0.7);
@@ -154,15 +147,12 @@ p{
 }
 .lizard{
     background-color: hsl(261, 73%, 60%);
-    box-shadow: 0px 10px hsla(261, 72%, 63%, 0.7);
-        
+    box-shadow: 0px 10px hsla(261, 72%, 63%, 0.7);        
 }
 .rock{
     background-color: hsl(349, 71%, 52%);
-    box-shadow: 0px 10px  hsla(349, 70%, 56%, 0.7);
-       
+    box-shadow: 0px 10px  hsla(349, 70%, 56%, 0.7);       
 }
-
 .third{
     text-align: end;
     margin-top: -20px;
@@ -180,8 +170,6 @@ button{
     margin-top: -15px;   
     z-index: 1;
 }
-
-
 .rules{
     display: none;
     padding: 30px;
@@ -194,15 +182,13 @@ button{
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;    
-    
+    z-index: 2;      
 }
 h2{
     text-transform: uppercase;
     margin-bottom: 95px;
     font-size: 28px;
 }
-
 .start-game{
     display: none;
 }
@@ -259,13 +245,9 @@ h2{
 .game .rock{
     box-shadow: 0px 14px hsla(349, 70%, 56%, 0.7);       
 }
-
 #play-again{
     display: none;
     margin: 0px 35px;
-    /**varijanta 1*/
-    /*position: relative;
-    top: 70px;*/
 }
 .play-again p{
     color: hsl(349, 71%, 52%);
@@ -281,53 +263,41 @@ h2{
     color: whitesmoke;
     margin-bottom: 25px;
 }
-/***proba***/
-.gradient{
-   
-}
 
+.gradient{
+   display: none;
+}
 #gradient{
   position: relative;
   bottom: 540px;
   left: -7px;   
 }
-
 #gradient1{
     position: relative;
     bottom: 540px;
     left: 623px;    
 }
-/*#gradient{
-    position: absolute;
-    top: 144px;
-    left: 58px;
-}
-#gradient1{
-    position: absolute;
-    top: 144px;
-    left: 618px;
-}*/
-.gradient .one{
+.gradient-one{
     border-radius: 50%;
     background-color: violet;
     width: 280px;
     height: 280px;
 }
-.gradient .two{
+.gradient-two{
     border-radius: 50%;
     background-color: hsla(217, 16%, 45%, 0.2);
     padding: 70px;
     width: 420px;
     height: 420px;    
 }
-.gradient .three{
+.gradient-three{
     border-radius: 50%;
     background-color: hsla(229, 25%, 31%, 0.2);
     padding: 70px;
     width: 560px;
     height: 560px;
 }
-.gradient .four{
+.gradient-four{
     border-radius: 50%;
     background-color: hsla(214, 47%, 23%, 0.2);
     padding: 65px;
@@ -338,7 +308,7 @@ h2{
 
 /**Interesting gradient effect***/
 
-/*.gradient .four{
+/*.gradient-four{
     border-radius: 50%;    
     background-image: repeating-radial-gradient(circle at 50%, hsl(237, 49%, 15%), hsl(214, 47%, 23%) 64px );
     width: 640px;
@@ -374,10 +344,8 @@ h2{
     .second .icon, .game .icon, #house-card{
         width: 130px;
         height: 130px;
-        margin: 105px 27px 14px 27px;
-        
+        margin: 105px 27px 14px 27px;        
     }
-
     .icon-bg, .game .icon-bg{
         width: 100px;
         height: 100px;
@@ -408,8 +376,7 @@ h2{
     }
     .bonus-first-row .icon-bonus{
         margin: 15px 7px;
-    }
-    
+    }    
     .paper, .game .paper{
         box-shadow: 0px 6px hsla(230, 89%, 65%, 0.7);
     }
@@ -417,8 +384,7 @@ h2{
         box-shadow: 0px 6px hsla(40, 84%, 53%, 0.7);
     }
     .icon.rock, .game .rock{
-        box-shadow: 0px 6px hsla(349, 70%, 56%, 0.7);
-        
+        box-shadow: 0px 6px hsla(349, 70%, 56%, 0.7);        
     }
     .game .icon-bg{       
         box-shadow: 0px 5px inset lightgray;
@@ -446,8 +412,7 @@ h2{
     .rules{
         width: 377px;
         height: 790px;
-        margin-top: -50px;
-    
+        margin-top: -50px;    
     }
     .rules .first-row{
         flex-direction: column;
@@ -462,8 +427,7 @@ h2{
         margin-bottom: 100px;
     }
     .game{
-        padding: 0px;
-        
+        padding: 0px;        
     }
     .game p{
         font-size: 10px;
@@ -504,28 +468,27 @@ h2{
         position: relative;
         bottom: 610px;
         left: -100px;  
-      }
-      
+      }      
       #gradient1{
           position: relative;
           bottom: 610px;
           left: 85px;
       }
-    /*.gradient .one{
+    /*.gradient-one{
         width: 130px;
         height: 130px;
     }*/
-    .gradient .two{
+    .gradient-two{
         padding: 20px;
         width: 170px;
         height: 170px;
     }
-    .gradient .three{
+    .gradient-three{
         padding: 30px;
         width: 230px;
         height: 230px;
     }
-    .gradient .four{
+    .gradient-four{
         padding: 35px;
         width: 300px;
         height: 300px;
