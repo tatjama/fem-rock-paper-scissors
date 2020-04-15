@@ -13,7 +13,7 @@ html, body{
     background-color: hsla(229, 25%, 31%, 0.2);
     width: 1366px;
     height: 728px;
-    padding: 30px;
+    padding: 43px;
     overflow: hidden;
 }
 .main{
@@ -70,7 +70,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
-    margin-bottom: -50px;
+    margin-bottom: -55px;
 }
 .icon{   
     width: 200px;
@@ -80,7 +80,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 35px;
 }
 .icon-bg{
     width: 140px;
@@ -107,7 +107,7 @@ p{
 .bonus-first-row{
     display: flex;
     flex-direction: row;
-    margin-top: 150px;
+    margin-top: 135px;
 }
 .bonus-second-row{
     display: flex;
@@ -165,7 +165,7 @@ p{
 
 .third{
     text-align: end;
-    margin-bottom: 40px;
+    margin-top: -20px;
 }
 button{
     position: relative;
@@ -195,7 +195,7 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;    
-    margin-top: -65px;
+    
 }
 h2{
     text-transform: uppercase;
@@ -282,18 +282,18 @@ h2{
     margin-bottom: 25px;
 }
 .gradient{
-    
+
 }
 
 #gradient{
   position: relative;
-  bottom: 600px;
+  bottom: 540px;
   left: -7px;  
 }
 
 #gradient1{
     position: relative;
-    bottom: 600px;
+    bottom: 540px;
     left: 623px;
 }
 /*#gradient{
@@ -306,12 +306,12 @@ h2{
     top: 144px;
     left: 618px;
 }*/
-/*.gradient .one{
+.gradient .one{
     border-radius: 50%;
     background-color: violet;
     width: 280px;
     height: 280px;
-}*/
+}
 .gradient .two{
     border-radius: 50%;
     background-color: hsla(217, 16%, 45%, 0.2);
@@ -434,7 +434,7 @@ h2{
     }
     .third{
         text-align: center;
-        margin-top: 135px;
+        margin-top: 120px;
         margin-bottom: 50px;
     }
     button{
@@ -444,7 +444,7 @@ h2{
     .rules{
         width: 377px;
         height: 765px;
-        margin-top: -41px;
+        margin-top: -50px;
     
     }
     .rules .first-row{
@@ -500,14 +500,14 @@ h2{
     }
     #gradient{
         position: relative;
-        bottom: 590px;
-        left: -84px;  
+        bottom: 560px;
+        left: -100px;  
       }
       
       #gradient1{
           position: relative;
-          bottom: 590px;
-          left: 100px;
+          bottom: 560px;
+          left: 85px;
       }
     /*.gradient .one{
         width: 130px;
