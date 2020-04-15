@@ -117,7 +117,9 @@ function showRules(){
       document.querySelector('.score h1').innerHTML = 0;
     } 
     document.getElementById('play-again').style.display = 'flex';
-    switch(rules()){
+    console.log(rulesBonus());
+    switch(rulesBonus()){
+      
       case 'win':      
       document.querySelector('.gradient').id = 'gradient';      
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';

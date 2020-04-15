@@ -46,6 +46,22 @@ function playAgainBonus(){
   document.querySelector('#bonus-intro').style.display = "flex";
   document.querySelector('.second').style.display = 'none';    
 }
+
+function rulesBonus(){
+  let a = document.getElementById('player-card').className.slice(5);
+  let b = document.getElementById('house-card').className.slice(5);  
+      
+  
+    if(a == b){
+      return 'equal'
+    }else if((a =='paper'&& (b =='rock' ||b =='spock')) || (a =='rock' && ( b =='lizard' || b =='scissors')) ||
+    (a == 'lizard' && ( b =='spock' || b == 'paper')) || (a == 'spock' && ( b == 'scissors' || b == 'rock')) ||
+    ( a == 'scissors' && ( b =='paper' || b== 'lizard'))){
+      return 'win'}else{ 
+        return 'lose'
+      }
+ }
+/*
 function rulesBonus(){
   let result, player, house = '';
   player = document.getElementById('player-card').className.slice(5);
@@ -82,4 +98,4 @@ function rulesBonus(){
  }
  return result;
  
-}
+}*/
