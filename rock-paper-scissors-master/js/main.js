@@ -67,45 +67,25 @@ function showRules(){
     }
     document.getElementById('house-card-image').src = './images/icon-' + y + '.svg';
     document.getElementById('house-card').className = 'icon ' + y;    
-  }
-  
-   function rules(){
-     let result, player, house = '';
-     player = document.getElementById('player-card').className.slice(5);
-     house = document.getElementById('house-card').className.slice(5);    
-    
-    switch(player){
-      case 'paper':
-        if(house == 'rock'){
-          result =  'win'
-        }else if(house == 'scissors'){
-          result = 'lose'
-        }else{
-        result =  'equal';
-       }
-        break;
-        case 'rock':
-          if(house == 'scissors'){
-            result = 'win';
-          }else if(house == 'paper'){
-            result = 'lose'
-          }else{
-          result = 'equal';
+  }  
+
+  /****GAME LOGIC */
+  function gameResult(){
+    let a = document.getElementById('player-card').className.slice(5);
+    let b = document.getElementById('house-card').className.slice(5);    
+      if(a == b){
+        return 'equal'
+      }else if((a =='paper'&& (b =='rock' ||b =='spock')) || 
+      (a =='rock' && ( b =='lizard' || b =='scissors')) ||
+      (a == 'lizard' && ( b =='spock' || b == 'paper')) || 
+      (a == 'spock' && ( b == 'scissors' || b == 'rock')) ||
+      ( a == 'scissors' && ( b =='paper' || b== 'lizard'))){
+        return 'win'
+      }else{ 
+          return 'lose'
         }
-          break;
-          case 'scissors':
-            if(house == 'paper'){
-              result = 'win';
-            }else if(house == 'rock'){
-              result = 'lose';
-            }else{
-            result = 'equal';
-          }
-            break;            
-    }
-    return result;
-    
-  }
+   }
+   
   /****GAME RESULT SHOW AND SAVE IN SESSION - SAME FUNCTION IN BONUS*/
   function showResult(){    
     var score = parseInt(document.querySelector('.score h1').innerHTML);
@@ -117,9 +97,8 @@ function showRules(){
       document.querySelector('.score h1').innerHTML = 0;
     } 
     document.getElementById('play-again').style.display = 'flex';
-    console.log(rulesBonus());
-    switch(rulesBonus()){
-      
+    
+    switch(gameResult()){      
       case 'win':      
       document.querySelector('.gradient').id = 'gradient';      
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
@@ -151,6 +130,4 @@ function showRules(){
     document.getElementById('blank').style.display = "flex";
     document.querySelector('.start-game').style.display = "none"; 
   }
-  function showScore(){
-
-  }
+  
