@@ -38,7 +38,7 @@ function originalGame(){
     displayRulesImageOriginal(size);
     document.getElementById('bonus').style.display = 'initial';
     document.getElementById('bonus-intro').style.display = "none";
-   document.getElementById('blank').removeEventListener('click', pickHouseBonus);
+   document.getElementById('blank').removeEventListener('click', pickCardHouseBonus);
    document.getElementById('play-again').removeEventListener('click', playAgainBonus);
 }
 

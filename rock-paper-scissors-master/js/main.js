@@ -1,3 +1,8 @@
+    var paper = 'paper';
+     var rock = 'rock';
+     var scissors = 'scissors';
+     var spock = 'spock';
+     var lizard = 'lizard';
 /*****START SCORE ONLOAD. SESSION VALUE IS START SCORE */
 function storageScore(){
   // alert(sessionStorage.getItem('score')); 
@@ -37,7 +42,7 @@ function showRules(){
       //console.log(rules());
      setTimeout(showResult, 1000);     
   }
-  function pickHouseBonus(){  
+  function pickCardHouseBonus(){  
     document.querySelector('#blank').style.display = "none";
     document.querySelector('#house-card').style.display = "flex";
     showHouseCard(5);
@@ -50,19 +55,19 @@ function showRules(){
     let y = "";
     switch(x){
       case 1: 
-      y = 'paper';
+      y = paper;
       break;
       case 2: 
-      y = 'scissors';        
+      y = scissors;        
       break;
       case 3: 
-      y = 'rock';
+      y = rock;
       break;
       case 4:
-      y = 'spock';
+      y = spock;
       break;
       case 5:
-      y = 'lizard';
+      y = lizard;
       break;  
     }
     document.getElementById('house-card-image').src = './images/icon-' + y + '.svg';
@@ -85,11 +90,44 @@ function showRules(){
           return 'lose'
         }
    }
+
+   function gameLogic(){
+     let player = document.getElementById('player-card').className.slice(5);
+     let house = document.getElementById('house-card').className.slice(5);     
+
+     switch(player+house){
+       case (player+player): return 'equal';
+       break;
+       case (paper+rock): return 'win';
+       break;
+       case (paper+spock): return 'win';
+       break;
+       case (rock+lizard): return 'win';
+       break;
+       case (rock+scissors): return 'win';
+       break;
+       case (lizard+spock): return 'win';
+       break;
+       case (lizard+paper): return 'win';
+       break;
+       case (spock+scissors): return 'win';
+       break;
+       case (spock+rock): return 'win';
+       break;
+       case (scissors+paper): return 'win';
+       break;
+       case (scissors+lizard): return 'win';
+       break;
+       default: return 'lose';
+
+       
+     }
+   }
    
   /****GAME RESULT SHOW AND SAVE IN SESSION - SAME FUNCTION IN BONUS*/
   function showResult(){    
     var score = parseInt(document.querySelector('.score h1').innerHTML);
-    //ssesion storage 
+    //session storage 
     sessionStorage.setItem('score', score );
     if(sessionStorage){  
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')); 
@@ -97,8 +135,8 @@ function showRules(){
       document.querySelector('.score h1').innerHTML = 0;
     } 
     document.getElementById('play-again').style.display = 'flex';
-    
-    switch(gameResult()){      
+    console.log(gameLogic())
+    switch(gameLogic()){      
       case 'win':      
       document.querySelector('.gradient').id = 'gradient';      
       document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';

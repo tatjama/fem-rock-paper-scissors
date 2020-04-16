@@ -276,12 +276,12 @@ h2{
 #gradient{
   position: relative;
   bottom: 540px;
-  left: -7px;   
+  left: -20px;   
 }
 #gradient1{
     position: relative;
     bottom: 540px;
-    left: 623px;    
+    left: 610px;    
 }
 .gradient-one{
     border-radius: 50%;
@@ -479,17 +479,17 @@ h2{
     #gradient{
         position: relative;
         bottom: 610px;
-        left: -100px;  
+        left: -97px;  
       }      
       #gradient1{
           position: relative;
           bottom: 610px;
-          left: 85px;
+          left: 87px;
       }
-    /*.gradient-one{
+    .gradient-one{
         width: 130px;
         height: 130px;
-    }*/
+    }
     .gradient-two{
         padding: 20px;
         width: 170px;
