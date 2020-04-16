@@ -3,6 +3,13 @@
      var scissors = 'scissors';
      var spock = 'spock';
      var lizard = 'lizard';
+     var win = 'win';
+     var lose = 'lose';
+     var equal = 'equal';
+     var messageWin = 'Y o u &nbsp W i n';
+     var messageLose = 'Y o u &nbsp L o s e';
+     var messageEqual = 'E q u a l';
+     
 /*****START SCORE ONLOAD. SESSION VALUE IS START SCORE */
 function storageScore(){
   // alert(sessionStorage.getItem('score')); 
@@ -79,15 +86,15 @@ function showRules(){
     let a = document.getElementById('player-card').className.slice(5);
     let b = document.getElementById('house-card').className.slice(5);    
       if(a == b){
-        return 'equal'
-      }else if((a =='paper'&& (b =='rock' ||b =='spock')) || 
-      (a =='rock' && ( b =='lizard' || b =='scissors')) ||
-      (a == 'lizard' && ( b =='spock' || b == 'paper')) || 
-      (a == 'spock' && ( b == 'scissors' || b == 'rock')) ||
-      ( a == 'scissors' && ( b =='paper' || b== 'lizard'))){
-        return 'win'
+        return equal;
+      }else if((a == paper && (b == rock || b == spock)) || 
+      (a == rock && ( b == lizard || b == scissors)) ||
+      (a == lizard && ( b == spock || b == paper)) || 
+      (a == spock && ( b == scissors || b == rock)) ||
+      (a == scissors && ( b == paper || b == lizard))){
+        return win;
       }else{ 
-          return 'lose'
+          return lose;
         }
    }
 
@@ -96,29 +103,29 @@ function showRules(){
      let house = document.getElementById('house-card').className.slice(5);     
 
      switch(player+house){
-       case (player+player): return 'equal';
+       case (player+player): return equal;
        break;
-       case (paper+rock): return 'win';
+       case (paper+rock): return win;
        break;
-       case (paper+spock): return 'win';
+       case (paper+spock): return win;
        break;
-       case (rock+lizard): return 'win';
+       case (rock+lizard): return win;
        break;
-       case (rock+scissors): return 'win';
+       case (rock+scissors): return win;
        break;
-       case (lizard+spock): return 'win';
+       case (lizard+spock): return win;
        break;
-       case (lizard+paper): return 'win';
+       case (lizard+paper): return win;
        break;
-       case (spock+scissors): return 'win';
+       case (spock+scissors): return win;
        break;
-       case (spock+rock): return 'win';
+       case (spock+rock): return win;
        break;
-       case (scissors+paper): return 'win';
+       case (scissors+paper): return win;
        break;
-       case (scissors+lizard): return 'win';
+       case (scissors+lizard): return win;
        break;
-       default: return 'lose';
+       default: return lose;
 
        
      }
@@ -137,21 +144,21 @@ function showRules(){
     document.getElementById('play-again').style.display = 'flex';
     console.log(gameLogic())
     switch(gameLogic()){      
-      case 'win':      
+      case win:      
       document.querySelector('.gradient').id = 'gradient';      
-      document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp W i n';
+      document.querySelector('#play-again h2').innerHTML = messageWin;
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
       document.querySelector('.gradient').style.display = 'initial';
       break;
-      case 'lose':      
+      case lose:      
       document.querySelector('.gradient').id = 'gradient1';
-      document.querySelector('#play-again h2').innerHTML = 'Y o u &nbsp L o s e';
+      document.querySelector('#play-again h2').innerHTML = messageLose;
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) - 1;
       document.querySelector('.gradient').style.display = 'initial';
       break;
       default:
       document.querySelector('.gradient').id = '';
-      document.querySelector('#play-again h2').innerHTML = ' E q u a l';
+      document.querySelector('#play-again h2').innerHTML = messageEqual;
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
       break;
     }
