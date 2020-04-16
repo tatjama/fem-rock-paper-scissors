@@ -50,18 +50,18 @@
   <!-- ORIGINAL INTRO GAME  DIV-->
   <div class="section second">
     <div class="first-row">
-    <div onclick="pickCard(this, 5, pickHouse, playAgain, '.second')"  class="icon paper">
+    <div onclick="pickCardPlayer(this, 5, pickCardHouse, playAgain, '.second')"  class="icon paper">
       <div class="icon-bg">
       <img src="./images/icon-paper.svg">
     </div>
     </div>
-    <div onclick="pickCard(this, 5, pickHouse, playAgain, '.second')"  class="icon scissors">
+    <div onclick="pickCardPlayer(this, 5, pickCardHouse, playAgain, '.second')"  class="icon scissors">
       <div class="icon-bg">
         <img src="./images/icon-scissors.svg">
     </div>
     </div>
   </div>
-    <div onclick="pickCard(this, 5, pickHouse, playAgain, '.second')"  class="icon rock">
+    <div onclick="pickCardPlayer(this, 5, pickCardHouse, playAgain, '.second')"  class="icon rock">
       <div class="icon-bg">
       <img src="./images/icon-rock.svg">
     </div>
@@ -75,17 +75,17 @@
 
   <div class="bonus-first-row">
     
-    <div onclick="pickCard(this, 11, pickHouseBonus,  playAgainBonus, '#bonus-intro')" class="icon-bonus spock">
+    <div onclick="pickCardPlayer(this, 11, pickHouseBonus,  playAgainBonus, '#bonus-intro')" class="icon-bonus spock">
       <div class="icon-bonus-bg">
         <img src="./images//icon-spock.svg">
       </div>
     </div>
-    <div onclick="pickCard(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus scissors">
+    <div onclick="pickCardPlayer(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus scissors">
       <div class="icon-bonus-bg">
         <img src="./images//icon-scissors.svg">
       </div>
     </div>
-    <div onclick="pickCard(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus paper">
+    <div onclick="pickCardPlayer(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus paper">
       <div class="icon-bonus-bg">
         <img src="./images//icon-paper.svg">
       </div>
@@ -95,12 +95,12 @@
 
   <div class="bonus-second-row">
 
-    <div onclick="pickCard(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus lizard">
+    <div onclick="pickCardPlayer(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus lizard">
       <div class="icon-bonus-bg">
         <img src="./images//icon-lizard.svg">
       </div>
     </div>
-    <div onclick="pickCard(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus rock">
+    <div onclick="pickCardPlayer(this, 11, pickHouseBonus, playAgainBonus, '#bonus-intro')" class="icon-bonus rock">
       <div class="icon-bonus-bg">
         <img src="./images//icon-rock.svg">
       </div>
@@ -124,7 +124,7 @@
     
     <div id="player-card" class="icon paper">
       <div class="icon-bg">
-        <img id="player-card-image" src="./images/icon-paper.svg">
+        <img id="player-card-image" src="">
       </div>
     </div>
     
@@ -144,7 +144,7 @@
 
     <div id="house-card" class="icon scissors">
       <div class="icon-bg">
-        <img id="house-card-image" src="./images/icon-scissors.svg">
+        <img id="house-card-image" src="">
       </div>
     </div>
 

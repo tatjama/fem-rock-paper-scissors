@@ -26,7 +26,7 @@ function bonusGame(){
     document.getElementById('original').style.display = 'initial';
     document.querySelector('.second').style.display = 'none';
     document.getElementById('bonus-intro').style.display = 'flex';
-    document.getElementById('blank').removeEventListener('click', pickHouse);
+    document.getElementById('blank').removeEventListener('click', pickCardHouse);
 }
 
 /**Change play mode to original game */

@@ -245,6 +245,12 @@ h2{
 .game .rock{
     box-shadow: 0px 14px hsla(349, 70%, 56%, 0.7);       
 }
+.game .spock{
+    box-shadow: 0px 14px hsla(189, 58%, 57%, 0.7);
+}
+.game .lizard{
+    box-shadow: 0px 14px hsla(261, 72%, 63%, 0.7);
+}
 #play-again{
     display: none;
     margin: 0px 35px;
@@ -383,8 +389,14 @@ h2{
     .scissors, .game .scissors{
         box-shadow: 0px 6px hsla(40, 84%, 53%, 0.7);
     }
-    .icon.rock, .game .rock{
+    .rock, .game .rock{
         box-shadow: 0px 6px hsla(349, 70%, 56%, 0.7);        
+    }
+    .spock, .game .spock{
+        box-shadow: 0px 6px hsla(189, 58%, 57%, 0.7);
+    }
+    .lizard, .game .lizard{
+        box-shadow: 0px 6px hsla(261, 72%, 63%, 0.7);
     }
     .game .icon-bg{       
         box-shadow: 0px 5px inset lightgray;

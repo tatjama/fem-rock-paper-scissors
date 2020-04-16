@@ -17,7 +17,7 @@ function showRules(){
   }
 
  /*******GAME LOGIC , pick player card and bonus player card*/ 
-  function pickCard(e, b, c, d, g){
+  function pickCardPlayer(e, b, c, d, g){
       var x = e.className;
       //console.log(x);
       y = x.slice(b);
@@ -30,7 +30,7 @@ function showRules(){
       document.getElementById('play-again').addEventListener('click', d);
   } 
   
-  function pickHouse(){
+  function pickCardHouse(){
       document.querySelector('#blank').style.display = "none";
       document.querySelector('#house-card').style.display = "flex";
       showHouseCard(3);
