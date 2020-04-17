@@ -13,13 +13,7 @@
       messageWin = 'Y o u &nbsp W i n';
       messageLose = 'Y o u &nbsp L o s e';
 
-     var rulesOfGame = {
-      paper: [rock, spock],
-      rock: [lizard, scissors],
-      lizard: [spock, paper],
-      spock: [scissors, rock],
-      scissors: [paper, lizard]
-    }
+    
      
 /*****START SCORE ONLOAD. SESSION VALUE IS START SCORE */
 function storageScore(){
@@ -89,11 +83,20 @@ function showRules(){
   }  
 
   /****GAME LOGIC */
+
+  var rulesOfGame = {
+    paper: [rock, spock],
+    rock: [lizard, scissors],
+    lizard: [spock, paper],
+    spock: [scissors, rock],
+    scissors: [paper, lizard]
+  }
+  
   function gameLogic(){
     let player = document.getElementById('player-card').className.slice(5);
     let house = document.getElementById('house-card').className.slice(5);
     let key = rulesOfGame[player];  
-    console.log(key);
+   
     if(player === house){
       return equal;
     }  
