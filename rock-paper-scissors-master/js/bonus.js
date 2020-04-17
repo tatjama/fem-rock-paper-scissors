@@ -19,6 +19,7 @@ if(size.matches){
 /***Change play mode to bonus game */
 function bonusGame(){
     playAgain();
+    
     document.querySelector('.logo img').src = './images/logo-bonus.svg';
     document.querySelector('#rules-image').src = './images/image-rules-bonus.svg';    
     displayRulesImageBonus(size);
@@ -27,6 +28,7 @@ function bonusGame(){
     document.querySelector('.second').style.display = 'none';
     document.getElementById('bonus-intro').style.display = 'flex';
     document.getElementById('blank').removeEventListener('click', pickCardHouse);
+    document.getElementById('play-again').addEventListener('click', playAgain);
 }
 
 /**Change play mode to original game */
@@ -42,7 +44,7 @@ function originalGame(){
    document.getElementById('play-again').removeEventListener('click', playAgainBonus);
 }
 
-function playAgainBonus(){  
+function playAgainBonus(){    
   document.querySelector('#bonus-intro').style.display = "flex";
   document.querySelector('.second').style.display = 'none';    
 }

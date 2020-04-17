@@ -3,12 +3,31 @@
      var scissors = 'scissors';
      var spock = 'spock';
      var lizard = 'lizard';
-     var win = 'win';
-     var lose = 'lose';
-     var equal = 'equal';
      var messageWin = 'Y o u &nbsp W i n';
      var messageLose = 'Y o u &nbsp L o s e';
      var messageEqual = 'E q u a l';
+
+     var rulesOfGame = {
+      paper: [rock, spock],
+      rock: [lizard, scissors],
+      lizard: [spock, paper],
+      spock: [scissors, rock],
+      scissors: [paper, lizard]
+    }
+    var localNameSerbia = {
+      localNameOfPaper :'papir',
+      localNameOfRock :'kamen',
+      localNameOfScissors : 'makaze',
+      localNameOfSpock : 'spok',
+      localNameOfLizard : 'guster'
+    }
+
+     var paper = localNameOfPaper;
+     var rock = localNameOfRock;
+     var scissors = localNameOfScissors;
+     var spock = localNameOfSpock;
+     var lizard = localNameOfLizard;
+     
      
 /*****START SCORE ONLOAD. SESSION VALUE IS START SCORE */
 function storageScore(){
@@ -82,54 +101,24 @@ function showRules(){
   }  
 
   /****GAME LOGIC */
-  function gameResult(){
-    let a = document.getElementById('player-card').className.slice(5);
-    let b = document.getElementById('house-card').className.slice(5);    
-      if(a == b){
-        return equal;
-      }else if((a == paper && (b == rock || b == spock)) || 
-      (a == rock && ( b == lizard || b == scissors)) ||
-      (a == lizard && ( b == spock || b == paper)) || 
-      (a == spock && ( b == scissors || b == rock)) ||
-      (a == scissors && ( b == paper || b == lizard))){
-        return win;
-      }else{ 
-          return lose;
-        }
-   }
 
-   function gameLogic(){
-     let player = document.getElementById('player-card').className.slice(5);
-     let house = document.getElementById('house-card').className.slice(5);     
+  function gameLogic(){
+    let card1 = document.getElementById('player-card').className.slice(5);
+    let card2 = document.getElementById('house-card').className.slice(5);
+    let key = rulesOfGame[card1];
+    let value = card2; 
 
-     switch(player+house){
-       case (player+player): return equal;
-       break;
-       case (paper+rock): return win;
-       break;
-       case (paper+spock): return win;
-       break;
-       case (rock+lizard): return win;
-       break;
-       case (rock+scissors): return win;
-       break;
-       case (lizard+spock): return win;
-       break;
-       case (lizard+paper): return win;
-       break;
-       case (spock+scissors): return win;
-       break;
-       case (spock+rock): return win;
-       break;
-       case (scissors+paper): return win;
-       break;
-       case (scissors+lizard): return win;
-       break;
-       default: return lose;
-
-       
-     }
-   }
+    if(card1 === card2){
+      return 0;
+    }
+    for(let i = 0; i < key.length; i++ ){
+      if(key[i] == value ){
+         return 1;        
+      }else{
+        return -1;
+      }      
+    }    
+  }
    
   /****GAME RESULT SHOW AND SAVE IN SESSION - SAME FUNCTION IN BONUS*/
   function showResult(){    
@@ -144,13 +133,13 @@ function showRules(){
     document.getElementById('play-again').style.display = 'flex';
     console.log(gameLogic())
     switch(gameLogic()){      
-      case win:      
+      case 1:      
       document.querySelector('.gradient').id = 'gradient';      
       document.querySelector('#play-again h2').innerHTML = messageWin;
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
       document.querySelector('.gradient').style.display = 'initial';
       break;
-      case lose:      
+      case -1:      
       document.querySelector('.gradient').id = 'gradient1';
       document.querySelector('#play-again h2').innerHTML = messageLose;
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) - 1;
