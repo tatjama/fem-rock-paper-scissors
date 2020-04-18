@@ -35,11 +35,12 @@ function showRules(){
  /*******GAME LOGIC , pick player card and bonus player card*/ 
   function pickCardPlayer(e, b, c, d, g){
       var x = e.className;
+      var playerCard = document.getElementById('player-card');
       y = x.slice(b);
       document.getElementById('player-card-image').src = './images/icon-'+ y +'.svg';
       document.querySelector(g).style.display = "none";
       document.querySelector('.start-game').style.display = "initial";
-      document.getElementById('player-card').className = 'icon ' + y;
+      playerCard.className = 'icon ' + y;
       document.getElementById('blank').addEventListener('click', c);
       document.getElementById('play-again').addEventListener('click', d);
   } 
