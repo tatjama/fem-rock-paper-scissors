@@ -1,3 +1,15 @@
+$scissorsColor:  hsl(39, 89%, 49%);
+$scissorsShadow: hsla(40, 84%, 53%, 0.7);
+$paperColor: hsl(230, 89%, 62%) ;
+$paperShadow: 0px 10px hsla(230, 89%, 65%, 0.7) ;
+$spockColor: hsl(189, 59%, 53%);
+$spockShadow: 0px 10px hsla(189, 58%, 57%, 0.7);
+$lizardColor: hsl(261, 73%, 60%);
+$lizardShadow: 0px 10px hsla(261, 72%, 63%, 0.7);        
+$rockColor: hsl(349, 71%, 52%);
+$rockShadow: 0px 10px  hsla(349, 70%, 56%, 0.7);       
+
+
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -134,24 +146,24 @@ p{
   bottom: 125px;
 }
 .paper{    
-  background-color: hsl(230, 89%, 62%) ;
-  box-shadow: 0px 10px hsla(230, 89%, 65%, 0.7) ;
+  background-color: $paperColor ;
+  box-shadow: 0px 10px $paperShadow ;
 }
 .scissors{
-  background-color:  hsl(39, 89%, 49%);
-  box-shadow: 0px 10px hsla(40, 84%, 53%, 0.7);
+  background-color:  $scissorsColor;
+  box-shadow: 0px 10px $scissorsShadow ;
 }
 .spock{
-  background-color: hsl(189, 59%, 53%);
-  box-shadow: 0px 10px hsla(189, 58%, 57%, 0.7);
+  background-color: $spockColor;
+  box-shadow: 0px 10px $spockShadow;
 }
 .lizard{
-  background-color: hsl(261, 73%, 60%);
-  box-shadow: 0px 10px hsla(261, 72%, 63%, 0.7);        
+  background-color: $lizardColor;
+  box-shadow: 0px 10px $lizardShadow;        
 }
 .rock{
-  background-color: hsl(349, 71%, 52%);
-  box-shadow: 0px 10px  hsla(349, 70%, 56%, 0.7);       
+  background-color: $rockColor;
+  box-shadow: 0px 10px $rockShadow;       
 }
 .third{
   text-align: end;
@@ -237,19 +249,19 @@ z-index: 1;
   box-shadow: none;
 }
 .game .paper{
-  box-shadow: 0px 14px   hsla(230, 89%, 65%, 0.7);
+  box-shadow: 0px 14px  $paperShadow;
 }
 .game .scissors{
-  box-shadow: 0px 14px hsla(40, 84%, 53%, 0.7);
+  box-shadow: 0px 14px $scissorsShadow;
 }
 .game .rock{
-  box-shadow: 0px 14px hsla(349, 70%, 56%, 0.7);       
+  box-shadow: 0px 14px $rockShadow;       
 }
 .game .spock{
-  box-shadow: 0px 14px hsla(189, 58%, 57%, 0.7);
+  box-shadow: 0px 14px $spockShadow;
 }
 .game .lizard{
-  box-shadow: 0px 14px hsla(261, 72%, 63%, 0.7);
+  box-shadow: 0px 14px $lizardShadow;
 }
 #play-again{
   display: none;
@@ -384,19 +396,19 @@ left: -20px;
       margin: 15px 7px;
   }    
   .paper, .game .paper{
-      box-shadow: 0px 6px hsla(230, 89%, 65%, 0.7);
+      box-shadow: 0px 6px $paperShadow;
   }
   .scissors, .game .scissors{
-      box-shadow: 0px 6px hsla(40, 84%, 53%, 0.7);
+      box-shadow: 0px 6px $scissorsShadow;
   }
   .rock, .game .rock{
-      box-shadow: 0px 6px hsla(349, 70%, 56%, 0.7);        
+      box-shadow: 0px 6px $rockShadow;        
   }
   .spock, .game .spock{
-      box-shadow: 0px 6px hsla(189, 58%, 57%, 0.7);
+      box-shadow: 0px 6px $spockShadow;
   }
   .lizard, .game .lizard{
-      box-shadow: 0px 6px hsla(261, 72%, 63%, 0.7);
+      box-shadow: 0px 6px $lizardShadow;
   }
   .game .icon-bg{       
       box-shadow: 0px 5px inset lightgray;
