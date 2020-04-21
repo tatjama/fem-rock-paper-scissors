@@ -4,4 +4,4 @@ Bonus game with 5 cards (paper, rock, scissors, spock and lizard)
 Technology:
 Vanilla JavaScript, HTML, CSS, 
 Session for keep score.
-Responzive design
+Responsive design
