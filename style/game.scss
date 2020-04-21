@@ -2,6 +2,7 @@
 @import './_header';
 @import './rules';
 @import './gradient';
+@import './_maingame';
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -145,19 +146,11 @@ button{
 .start-game{
     display: none;
 }
-.game {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 80px;
-}
+
 #house-card{
     display: none;
 }
-.game p{
-    font-size: 16px;
-    color: $iconColor;
-}
+
 .game-div{
    display: flex;
    flex-direction: column;
@@ -168,42 +161,11 @@ button{
 .icon img{
     width: 70px;
 }
-.game .icon{
-    width: 280px;
-    height: 280px;
-    margin: 70px 35px -35px 35px;
-}
-.game .icon-bg{
-    width: 210px;
-    height: 210px;
-    box-shadow: 0px 11px inset $iconShadow;
-}
 .game img{
     width: 90px;
     height: auto;
 }
-.game .blank{    
-   background-color: hsl(237, 49%, 15%);
-}
-.blank .icon-bg{
-    background-color: hsla(214, 47%, 23%, 0.2); 
-    box-shadow: none;
-}
-.game .paper{
-    box-shadow: 0px 14px  $paperShadow;
-}
-.game .scissors{
-    box-shadow: 0px 14px $scissorsShadow;
-}
-.game .rock{
-    box-shadow: 0px 14px $rockShadow;       
-}
-.game .spock{
-    box-shadow: 0px 14px $spockShadow;
-}
-.game .lizard{
-    box-shadow: 0px 14px $lizardShadow;
-}
+
 #play-again{
     display: none;
     margin: 0px 35px;

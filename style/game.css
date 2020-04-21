@@ -200,6 +200,78 @@ h2 {
   }
 }
 
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px;
+}
+
+.game .paper {
+  -webkit-box-shadow: 0px 14px rgba(86, 113, 245, 0.7);
+          box-shadow: 0px 14px rgba(86, 113, 245, 0.7);
+}
+
+.game .scissors {
+  -webkit-box-shadow: 0px 14px rgba(236, 169, 34, 0.7);
+          box-shadow: 0px 14px rgba(236, 169, 34, 0.7);
+}
+
+.game .rock {
+  -webkit-box-shadow: 0px 14px rgba(221, 64, 93, 0.7);
+          box-shadow: 0px 14px rgba(221, 64, 93, 0.7);
+}
+
+.game .spock {
+  -webkit-box-shadow: 0px 14px rgba(82, 190, 209, 0.7);
+          box-shadow: 0px 14px rgba(82, 190, 209, 0.7);
+}
+
+.game .lizard {
+  -webkit-box-shadow: 0px 14px rgba(140, 93, 229, 0.7);
+          box-shadow: 0px 14px rgba(140, 93, 229, 0.7);
+}
+
+.game p {
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+.game .icon {
+  width: 280px;
+  height: 280px;
+  margin: 70px 35px -35px 35px;
+}
+
+.game .icon-bg {
+  width: 210px;
+  height: 210px;
+  -webkit-box-shadow: 0px 11px inset lightgray;
+          box-shadow: 0px 11px inset lightgray;
+}
+
+.game img {
+  width: 90px;
+  height: auto;
+}
+
+.game .blank {
+  background-color: #141539;
+}
+
+.game .blank .icon-bg {
+  background-color: rgba(31, 55, 86, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -440,27 +512,8 @@ button {
   display: none;
 }
 
-.game {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 80px;
-}
-
 #house-card {
   display: none;
-}
-
-.game p {
-  font-size: 16px;
-  color: whitesmoke;
 }
 
 .game-div {
@@ -484,57 +537,9 @@ button {
   width: 70px;
 }
 
-.game .icon {
-  width: 280px;
-  height: 280px;
-  margin: 70px 35px -35px 35px;
-}
-
-.game .icon-bg {
-  width: 210px;
-  height: 210px;
-  -webkit-box-shadow: 0px 11px inset lightgray;
-          box-shadow: 0px 11px inset lightgray;
-}
-
 .game img {
   width: 90px;
   height: auto;
-}
-
-.game .blank {
-  background-color: #141539;
-}
-
-.blank .icon-bg {
-  background-color: rgba(31, 55, 86, 0.2);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.game .paper {
-  -webkit-box-shadow: 0px 14px rgba(86, 113, 245, 0.7);
-          box-shadow: 0px 14px rgba(86, 113, 245, 0.7);
-}
-
-.game .scissors {
-  -webkit-box-shadow: 0px 14px rgba(236, 169, 34, 0.7);
-          box-shadow: 0px 14px rgba(236, 169, 34, 0.7);
-}
-
-.game .rock {
-  -webkit-box-shadow: 0px 14px rgba(221, 64, 93, 0.7);
-          box-shadow: 0px 14px rgba(221, 64, 93, 0.7);
-}
-
-.game .spock {
-  -webkit-box-shadow: 0px 14px rgba(82, 190, 209, 0.7);
-          box-shadow: 0px 14px rgba(82, 190, 209, 0.7);
-}
-
-.game .lizard {
-  -webkit-box-shadow: 0px 14px rgba(140, 93, 229, 0.7);
-          box-shadow: 0px 14px rgba(140, 93, 229, 0.7);
 }
 
 #play-again {
