@@ -5,12 +5,6 @@
 @import './_maingame';
 @import './_playagain';
 
-@mixin flex($direction, $justifyContent) {
-    display: flex;
-    flex-direction: $direction;
-    align-items: center;
-    justify-content: $justifyContent;
-}
 
 *{
     box-sizing: border-box;
@@ -22,7 +16,7 @@ html, body{
     font-size: 16px;    
     }
 .container{
-    background-color: $primalBgColor;
+    background-color: $primalColor ;
     /*background-color: hsla(229, 25%, 31%, 0.2);*/
     width: 1366px;
     height: 728px;
