@@ -1,4 +1,7 @@
-@import './variables';
+@import './_variables';
+@import './_header';
+@import './rules';
+@import './gradient';
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -21,41 +24,6 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
-.first{   
-    height: 150px;
-    width: 700px;
-    padding: 0px 30px;
-    border: solid 3px hsl(217, 16%, 45%) ;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-}
-#original{
-    display: none;
-}
-.score{
-    width: 150px;
-    height: 100px;
-    background-color: $iconColor;
-    border-radius: 10px;
-    text-align: center;
-    padding: 15px 0px;   
-    }    
-h1{
-    font-size: 50px;   
-}
-h1:hover{
-    color: red;
-}
-p{
-    color: hsl(229, 64%, 46%);
-    text-transform: uppercase;    
-    font-size: 12px;
-    font-weight: 700;
 }
 .second{
     background-image: url('../images/bg-triangle.svg');
@@ -159,40 +127,20 @@ p{
 }
 .third{
     text-align: end;
-    margin-top: -20px;   
-    button{
-        position: relative;
-        border: solid 3px hsl(217, 16%, 45%);
-        border-radius: 10px;
-        color: $iconColor;
-        text-transform: uppercase;
-        background-color:transparent;
-        height: 35px;
-        width: 120px;
-        font-size: 12px; 
-        margin-top: -15px;   
-        z-index: 1;        
-    }    
+    margin-top: -20px;
 }
-
-.rules{
-    display: none;
-    padding: 30px;
-    height: 400px;
-    width: 385px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: $iconColor;
+button{
     position: relative;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;      
-}
-h2{
+    border: solid 3px hsl(217, 16%, 45%);
+    border-radius: 10px;
+    color: $iconColor;
     text-transform: uppercase;
-    margin-bottom: 95px;
-    font-size: 28px;
+    background-color:transparent;
+    height: 35px;
+    width: 120px;
+    font-size: 12px; 
+    margin-top: -15px;   
+    z-index: 1;
 }
 .start-game{
     display: none;
@@ -202,53 +150,13 @@ h2{
     flex-direction: row;
     justify-content: center;
     padding: 80px;
-    p{
-        font-size: 16px;
-    color: $iconColor;
-    }
-    .icon{
-        width: 280px;
-        height: 280px;
-        margin: 70px 35px -35px 35px;
-        img{
-            width: 70px;
-        }
-    }
-    .icon-bg{
-        width: 210px;
-        height: 210px;
-        box-shadow: 0px 11px inset $iconShadow;
-    }
-    img{
-        width: 90px;
-        height: auto;
-    }
-    .blank{    
-        background-color: hsl(237, 49%, 15%);
-        .icon-bg{
-            background-color: hsla(214, 47%, 23%, 0.2); 
-            box-shadow: none;
-        }
-     }
-    .paper{
-        box-shadow: 0px 14px  $paperShadow;
-    }
-    .scissors{
-        box-shadow: 0px 14px $scissorsShadow;
-    }
-    .rock{
-        box-shadow: 0px 14px $rockShadow;       
-    }
-    .spock{
-        box-shadow: 0px 14px $spockShadow;
-    }
-    .lizard{
-        box-shadow: 0px 14px $lizardShadow;
-    }
-    
 }
 #house-card{
     display: none;
+}
+.game p{
+    font-size: 16px;
+    color: $iconColor;
 }
 .game-div{
    display: flex;
@@ -256,12 +164,45 @@ h2{
    align-items: center;
    justify-content: center;   
   z-index: 1;
-  h2{
-    text-transform: uppercase;
-    font-size: 36px;
-    color: $iconColor;
-    margin-bottom: 25px;
 }
+.icon img{
+    width: 70px;
+}
+.game .icon{
+    width: 280px;
+    height: 280px;
+    margin: 70px 35px -35px 35px;
+}
+.game .icon-bg{
+    width: 210px;
+    height: 210px;
+    box-shadow: 0px 11px inset $iconShadow;
+}
+.game img{
+    width: 90px;
+    height: auto;
+}
+.game .blank{    
+   background-color: hsl(237, 49%, 15%);
+}
+.blank .icon-bg{
+    background-color: hsla(214, 47%, 23%, 0.2); 
+    box-shadow: none;
+}
+.game .paper{
+    box-shadow: 0px 14px  $paperShadow;
+}
+.game .scissors{
+    box-shadow: 0px 14px $scissorsShadow;
+}
+.game .rock{
+    box-shadow: 0px 14px $rockShadow;       
+}
+.game .spock{
+    box-shadow: 0px 14px $spockShadow;
+}
+.game .lizard{
+    box-shadow: 0px 14px $lizardShadow;
 }
 #play-again{
     display: none;
@@ -275,81 +216,20 @@ h2{
         font-size: 12px;
     }
 }
-
-.gradient{
-   display: none;
-}
-#gradient{
-  position: relative;
-  bottom: 540px;
-  left: -20px;   
-}
-#gradient1{
-    position: relative;
-    bottom: 540px;
-    left: 610px;    
-}
-.gradient-one{
-    border-radius: 50%;
-    background-color: violet;
-    width: 280px;
-    height: 280px;
-}
-.gradient-two{
-    border-radius: 50%;
-    background-color: hsla(217, 16%, 45%, 0.2);
-    padding: 70px;
-    width: 420px;
-    height: 420px;    
-}
-.gradient-three{
-    border-radius: 50%;
-    background-color: hsla(229, 25%, 31%, 0.2);
-    padding: 70px;
-    width: 560px;
-    height: 560px;
-}
-.gradient-four{
-    border-radius: 50%;
-    background-color: hsla(214, 47%, 23%, 0.2);
-    padding: 65px;
-    width: 700px;
-    height: 700px;
-
+.game-div h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: $iconColor;
+    margin-bottom: 25px;
 }
 
-/**Interesting gradient effect***/
 
-/*.gradient-four{
-    border-radius: 50%;    
-    background-image: repeating-radial-gradient(circle at 50%, hsl(237, 49%, 15%), hsl(214, 47%, 23%) 64px );
-    width: 640px;
-    height: 640px;
-}*/
 @media screen and (max-width: 375px){
     .container{
         width: 375px;
         height: 765px;
     }
-    .first{
-        width: 317px;
-        height: 100px;
-    }
-    .logo img{
-        height: 45px;
-        width: auto;
-    }
-    .score{
-        width: 78px;
-        height: 72px;
-        padding: 12px 0px;
-        p{
-            font-size: 9px;
-        }
-    }
-    h1{
-        font-size: 30px;
-    }
+    
     .first-row{
         margin-bottom: -70px;
     }
@@ -385,11 +265,10 @@ h2{
     }
     .bonus-first-row{
         margin-top: 165px;
-        .icon-bonus{
-            margin: 15px 7px;
-        }    
     }
-    
+    .bonus-first-row .icon-bonus{
+        margin: 15px 7px;
+    }    
     .paper, .game .paper{
         box-shadow: 0px 6px $paperShadow;
     }
@@ -427,40 +306,23 @@ h2{
     button{
         height: 40px;
         width: 135px;
-    }
-    .rules{
-        width: 377px;
-        height: 790px;
-        margin-top: -50px; 
-        .first-row{
-            flex-direction: column;
-            margin-top: 80px;
-            align-items: center;
-            img{
-                position: relative;
-                top: 460px;
-            }
-        }   
     }    
-    h2{
-        margin-bottom: 100px;
-    }
     .game{
         padding: 0px; 
         p{
             font-size: 10px;
         }       
-    }     
+    }    
     .game-div{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;   
        z-index: 1;
-       margin-bottom: 148px; 
+       margin-bottom: 148px;  
        p{
         margin-top: 20px;
-        }     
+        }    
      }
      
     #play-again{
@@ -470,47 +332,19 @@ h2{
         width: 0px;
         text-align: center;
         margin: 0px;
+        h2{
+            font-size: 40px;
+            width: 230px;
+        }
         p{
             margin-top: 5px;
             font-size: 12px;
             color: hsl(237, 49%, 15%);
         }
-        h2{
-            font-size: 40px;
-            width: 230px;
-        }
     }
     .score.play-again{
         width: 230px;
         height: 50px;
-    } 
-    #gradient{
-        position: relative;
-        bottom: 610px;
-        left: -97px;  
-      }      
-      #gradient1{
-          position: relative;
-          bottom: 610px;
-          left: 87px;
-      }
-    .gradient-one{
-        width: 130px;
-        height: 130px;
     }
-    .gradient-two{
-        padding: 20px;
-        width: 170px;
-        height: 170px;
-    }
-    .gradient-three{
-        padding: 30px;
-        width: 230px;
-        height: 230px;
-    }
-    .gradient-four{
-        padding: 35px;
-        width: 300px;
-        height: 300px;
-    }
+    
 }

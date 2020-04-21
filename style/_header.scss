@@ -1,0 +1,53 @@
+.first{   
+    height: 150px;
+    width: 700px;
+    padding: 0px 30px;
+    border: solid 3px hsl(217, 16%, 45%) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+#original{
+    display: none;
+}
+.score{
+    width: 150px;
+    height: 100px;
+    background-color: $iconColor;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0px;   
+    }
+h1{
+    font-size: 50px;   
+}
+p{
+    color: hsl(229, 64%, 46%);
+    text-transform: uppercase;    
+    font-size: 12px;
+    font-weight: 700;
+}
+@media screen and(max-width: 375px){
+    .first{
+        width: 317px;
+        height: 100px;
+    }
+    .logo img{
+        height: 45px;
+        width: auto;
+    }
+    .score{
+        width: 78px;
+        height: 72px;
+        padding: 12px 0px;
+    }
+    .score p{
+        font-size: 9px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}

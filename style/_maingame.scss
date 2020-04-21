@@ -1,0 +1,50 @@
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px;
+    p{
+        font-size: 16px;
+    color: $iconColor;
+    }
+    .icon{
+        width: 280px;
+        height: 280px;
+        margin: 70px 35px -35px 35px;
+        img{
+            width: 70px;
+        }
+    }
+    .icon-bg{
+        width: 210px;
+        height: 210px;
+        box-shadow: 0px 11px inset $iconShadow;
+    }
+    img{
+        width: 90px;
+        height: auto;
+    }
+    .blank{    
+        background-color: hsl(237, 49%, 15%);
+        .icon-bg{
+            background-color: hsla(214, 47%, 23%, 0.2); 
+            box-shadow: none;
+        }
+     }
+    .paper{
+        box-shadow: 0px 14px  $paperShadow;
+    }
+    .scissors{
+        box-shadow: 0px 14px $scissorsShadow;
+    }
+    .rock{
+        box-shadow: 0px 14px $rockShadow;       
+    }
+    .spock{
+        box-shadow: 0px 14px $spockShadow;
+    }
+    .lizard{
+        box-shadow: 0px 14px $lizardShadow;
+    }
+    
+}

@@ -1,0 +1,81 @@
+.gradient{
+    display: none;
+ }
+ #gradient{
+   position: relative;
+   bottom: 540px;
+   left: -20px;   
+ }
+ #gradient1{
+     position: relative;
+     bottom: 540px;
+     left: 610px;    
+ }
+ .gradient-one{
+     border-radius: 50%;
+     background-color: violet;
+     width: 280px;
+     height: 280px;
+ }
+ .gradient-two{
+     border-radius: 50%;
+     background-color: hsla(217, 16%, 45%, 0.2);
+     padding: 70px;
+     width: 420px;
+     height: 420px;    
+ }
+ .gradient-three{
+     border-radius: 50%;
+     background-color: hsla(229, 25%, 31%, 0.2);
+     padding: 70px;
+     width: 560px;
+     height: 560px;
+ }
+ .gradient-four{
+     border-radius: 50%;
+     background-color: hsla(214, 47%, 23%, 0.2);
+     padding: 65px;
+     width: 700px;
+     height: 700px;
+ 
+ }
+ 
+ /**Interesting gradient effect***/
+ 
+ /*.gradient-four{
+     border-radius: 50%;    
+     background-image: repeating-radial-gradient(circle at 50%, hsl(237, 49%, 15%), hsl(214, 47%, 23%) 64px );
+     width: 640px;
+     height: 640px;
+ }*/
+ @media screen and(max-width: 375px){
+    #gradient{
+        position: relative;
+        bottom: 610px;
+        left: -97px;  
+      }      
+      #gradient1{
+          position: relative;
+          bottom: 610px;
+          left: 87px;
+      }
+    .gradient-one{
+        width: 130px;
+        height: 130px;
+    }
+    .gradient-two{
+        padding: 20px;
+        width: 170px;
+        height: 170px;
+    }
+    .gradient-three{
+        padding: 30px;
+        width: 230px;
+        height: 230px;
+    }
+    .gradient-four{
+        padding: 35px;
+        width: 300px;
+        height: 300px;
+    }
+ }
