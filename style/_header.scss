@@ -4,10 +4,7 @@
     padding: 0px 30px;
     border: solid 3px $buttonBorderColor ;
     border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, space-between);    
     z-index: 1;
 }
 #original{

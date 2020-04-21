@@ -1,7 +1,5 @@
 .game {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex(row, center);
     padding: 80px;
     .paper{
         box-shadow: 0px 14px  $paperShadow;
