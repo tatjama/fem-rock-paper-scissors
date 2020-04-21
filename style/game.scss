@@ -211,13 +211,53 @@ h2{
     flex-direction: row;
     justify-content: center;
     padding: 80px;
+    p{
+        font-size: 16px;
+    color: $iconColor;
+    }
+    .icon{
+        width: 280px;
+        height: 280px;
+        margin: 70px 35px -35px 35px;
+        img{
+            width: 70px;
+        }
+    }
+    .icon-bg{
+        width: 210px;
+        height: 210px;
+        box-shadow: 0px 11px inset $iconShadow;
+    }
+    img{
+        width: 90px;
+        height: auto;
+    }
+    .blank{    
+        background-color: hsl(237, 49%, 15%);
+        .icon-bg{
+            background-color: hsla(214, 47%, 23%, 0.2); 
+            box-shadow: none;
+        }
+     }
+    .paper{
+        box-shadow: 0px 14px  $paperShadow;
+    }
+    .scissors{
+        box-shadow: 0px 14px $scissorsShadow;
+    }
+    .rock{
+        box-shadow: 0px 14px $rockShadow;       
+    }
+    .spock{
+        box-shadow: 0px 14px $spockShadow;
+    }
+    .lizard{
+        box-shadow: 0px 14px $lizardShadow;
+    }
+    
 }
 #house-card{
     display: none;
-}
-.game p{
-    font-size: 16px;
-    color: $iconColor;
 }
 .game-div{
    display: flex;
@@ -225,63 +265,24 @@ h2{
    align-items: center;
    justify-content: center;   
   z-index: 1;
+  h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: $iconColor;
+    margin-bottom: 25px;
 }
-.icon img{
-    width: 70px;
-}
-.game .icon{
-    width: 280px;
-    height: 280px;
-    margin: 70px 35px -35px 35px;
-}
-.game .icon-bg{
-    width: 210px;
-    height: 210px;
-    box-shadow: 0px 11px inset $iconShadow;
-}
-.game img{
-    width: 90px;
-    height: auto;
-}
-.game .blank{    
-   background-color: hsl(237, 49%, 15%);
-}
-.blank .icon-bg{
-    background-color: hsla(214, 47%, 23%, 0.2); 
-    box-shadow: none;
-}
-.game .paper{
-    box-shadow: 0px 14px  $paperShadow;
-}
-.game .scissors{
-    box-shadow: 0px 14px $scissorsShadow;
-}
-.game .rock{
-    box-shadow: 0px 14px $rockShadow;       
-}
-.game .spock{
-    box-shadow: 0px 14px $spockShadow;
-}
-.game .lizard{
-    box-shadow: 0px 14px $lizardShadow;
 }
 #play-again{
     display: none;
     margin: 0px 35px;
 }
-.play-again p{
-    color: hsl(349, 71%, 52%);
-    font-size: 12px;
-}
 .play-again{
     width: 210px;
     height: 45px;
-}
-.game-div h2{
-    text-transform: uppercase;
-    font-size: 36px;
-    color: $iconColor;
-    margin-bottom: 25px;
+    p{
+        color: hsl(349, 71%, 52%);
+        font-size: 12px;
+    }
 }
 
 .gradient{
@@ -351,9 +352,9 @@ h2{
         width: 78px;
         height: 72px;
         padding: 12px 0px;
-    }
-    .score p{
-        font-size: 9px;
+        p{
+            font-size: 9px;
+        }
     }
     h1{
         font-size: 30px;
@@ -393,10 +394,11 @@ h2{
     }
     .bonus-first-row{
         margin-top: 165px;
+        .icon-bonus{
+            margin: 15px 7px;
+        }    
     }
-    .bonus-first-row .icon-bonus{
-        margin: 15px 7px;
-    }    
+    
     .paper, .game .paper{
         box-shadow: 0px 6px $paperShadow;
     }
@@ -438,37 +440,38 @@ h2{
     .rules{
         width: 377px;
         height: 790px;
-        margin-top: -50px;    
-    }
-    .rules .first-row{
-        flex-direction: column;
-        margin-top: 80px;
-        align-items: center;
-    }
-    .rules .first-row img{
-        position: relative;
-        top: 460px;
-    }
+        margin-top: -50px; 
+        .first-row{
+            flex-direction: column;
+            margin-top: 80px;
+            align-items: center;
+            img{
+                position: relative;
+                top: 460px;
+            }
+        }   
+    }    
     h2{
         margin-bottom: 100px;
     }
     .game{
-        padding: 0px;        
-    }
-    .game p{
-        font-size: 10px;
-    }
+        padding: 0px; 
+        p{
+            font-size: 10px;
+        }       
+    }     
     .game-div{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;   
        z-index: 1;
-       margin-bottom: 148px;      
+       margin-bottom: 148px; 
+       p{
+        margin-top: 20px;
+        }     
      }
-     .game-div p{
-         margin-top: 20px;
-     }
+     
     #play-again{
         flex-direction: column;
         position: relative;
@@ -476,20 +479,20 @@ h2{
         width: 0px;
         text-align: center;
         margin: 0px;
+        p{
+            margin-top: 5px;
+            font-size: 12px;
+            color: hsl(237, 49%, 15%);
+        }
+        h2{
+            font-size: 40px;
+            width: 230px;
+        }
     }
     .score.play-again{
         width: 230px;
         height: 50px;
-    }
-    #play-again h2{
-        font-size: 40px;
-        width: 230px;
-    }
-    #play-again p{
-        margin-top: 5px;
-        font-size: 12px;
-        color: hsl(237, 49%, 15%);
-    }
+    } 
     #gradient{
         position: relative;
         bottom: 610px;
