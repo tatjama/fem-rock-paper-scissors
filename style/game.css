@@ -74,6 +74,10 @@ h1 {
   font-size: 50px;
 }
 
+h1:hover {
+  color: red;
+}
+
 p {
   color: #2a46c0;
   text-transform: uppercase;
@@ -267,7 +271,7 @@ p {
   margin-top: -20px;
 }
 
-button {
+.third button {
   position: relative;
   border: solid 3px #606e85;
   border-radius: 10px;

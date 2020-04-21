@@ -1,17 +1,4 @@
-/**Colors in game**/
-$iconColor: whitesmoke;
-$iconShadow: lightgray;
-$paperColor: hsl(230, 89%, 62%);
-$paperShadow: hsla(230, 89%, 65%, 0.7);
-$scissorsColor: hsl(39, 89%, 49%);
-$scissorsShadow: hsla(40, 84%, 53%, 0.7);
-$spockColor: hsl(189, 59%, 53%);
-$spockShadow: hsla(189, 58%, 57%, 0.7);
-$lizardColor: hsl(261, 73%, 60%);
-$lizardShadow: hsla(261, 72%, 63%, 0.7); 
-$rockColor: hsl(349, 71%, 52%);
-$rockShadow: hsla(349, 70%, 56%, 0.7);
-
+@import './variables';
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -57,9 +44,12 @@ html, body{
     border-radius: 10px;
     text-align: center;
     padding: 15px 0px;   
-    }
+    }    
 h1{
     font-size: 50px;   
+}
+h1:hover{
+    color: red;
 }
 p{
     color: hsl(229, 64%, 46%);
@@ -169,21 +159,22 @@ p{
 }
 .third{
     text-align: end;
-    margin-top: -20px;
+    margin-top: -20px;   
+    button{
+        position: relative;
+        border: solid 3px hsl(217, 16%, 45%);
+        border-radius: 10px;
+        color: $iconColor;
+        text-transform: uppercase;
+        background-color:transparent;
+        height: 35px;
+        width: 120px;
+        font-size: 12px; 
+        margin-top: -15px;   
+        z-index: 1;        
+    }    
 }
-button{
-    position: relative;
-    border: solid 3px hsl(217, 16%, 45%);
-    border-radius: 10px;
-    color: $iconColor;
-    text-transform: uppercase;
-    background-color:transparent;
-    height: 35px;
-    width: 120px;
-    font-size: 12px; 
-    margin-top: -15px;   
-    z-index: 1;
-}
+
 .rules{
     display: none;
     padding: 30px;
