@@ -1,0 +1,31 @@
+#play-again{
+    display: none;
+    margin: 0px 35px;
+}
+.play-again{
+    width: 210px;
+    height: 45px;
+    p{
+        color: hsl(349, 71%, 52%);
+        font-size: 12px;
+    }
+}
+@media screen and(max-width: 375px){
+    #play-again{
+        flex-direction: column;
+        position: relative;
+        top: 225px;
+        width: 0px;
+        text-align: center;
+        margin: 0px;
+        h2{
+            font-size: 40px;
+            width: 230px;
+        }
+        p{
+            margin-top: 5px;
+            font-size: 12px;
+            color: hsl(237, 49%, 15%);
+        }
+    }
+}

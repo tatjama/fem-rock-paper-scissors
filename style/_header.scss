@@ -2,7 +2,7 @@
     height: 150px;
     width: 700px;
     padding: 0px 30px;
-    border: solid 3px hsl(217, 16%, 45%) ;
+    border: solid 3px $buttonBorderColor ;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -12,6 +12,12 @@
 }
 #original{
     display: none;
+    &:hover{
+        color: $iconColor;        
+    }
+}
+#bonus:hover{
+    color: $iconColor;    
 }
 .score{
     width: 150px;

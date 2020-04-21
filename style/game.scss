@@ -3,6 +3,9 @@
 @import './rules';
 @import './gradient';
 @import './_maingame';
+@import './_playagain';
+
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -13,7 +16,7 @@ html, body{
     font-size: 16px;    
     }
 .container{
-    background-color: hsl(238, 61%, 22%) ;
+    background-color: $primalBgColor;
     /*background-color: hsla(229, 25%, 31%, 0.2);*/
     width: 1366px;
     height: 728px;
@@ -132,7 +135,7 @@ html, body{
 }
 button{
     position: relative;
-    border: solid 3px hsl(217, 16%, 45%);
+    border: solid 3px $buttonBorderColor;
     border-radius: 10px;
     color: $iconColor;
     text-transform: uppercase;
@@ -157,6 +160,12 @@ button{
    align-items: center;
    justify-content: center;   
   z-index: 1;
+  h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: $iconColor;
+    margin-bottom: 25px;
+  }
 }
 .icon img{
     width: 70px;
@@ -166,32 +175,11 @@ button{
     height: auto;
 }
 
-#play-again{
-    display: none;
-    margin: 0px 35px;
-}
-.play-again{
-    width: 210px;
-    height: 45px;
-    p{
-        color: hsl(349, 71%, 52%);
-        font-size: 12px;
-    }
-}
-.game-div h2{
-    text-transform: uppercase;
-    font-size: 36px;
-    color: $iconColor;
-    margin-bottom: 25px;
-}
-
-
 @media screen and (max-width: 375px){
     .container{
         width: 375px;
         height: 765px;
-    }
-    
+    }    
     .first-row{
         margin-bottom: -70px;
     }
@@ -285,25 +273,7 @@ button{
        p{
         margin-top: 20px;
         }    
-     }
-     
-    #play-again{
-        flex-direction: column;
-        position: relative;
-        top: 225px;
-        width: 0px;
-        text-align: center;
-        margin: 0px;
-        h2{
-            font-size: 40px;
-            width: 230px;
-        }
-        p{
-            margin-top: 5px;
-            font-size: 12px;
-            color: hsl(237, 49%, 15%);
-        }
-    }
+     }         
     .score.play-again{
         width: 230px;
         height: 50px;

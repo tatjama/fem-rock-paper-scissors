@@ -1,3 +1,4 @@
+
 .gradient{
     display: none;
  }
@@ -13,27 +14,27 @@
  }
  .gradient-one{
      border-radius: 50%;
-     background-color: violet;
+     background-color: $gradientOne;
      width: 280px;
      height: 280px;
  }
  .gradient-two{
      border-radius: 50%;
-     background-color: hsla(217, 16%, 45%, 0.2);
+     background-color: $gradientTwo ;
      padding: 70px;
      width: 420px;
      height: 420px;    
  }
  .gradient-three{
      border-radius: 50%;
-     background-color: hsla(229, 25%, 31%, 0.2);
+     background-color: $gradientThree ;
      padding: 70px;
      width: 560px;
      height: 560px;
  }
  .gradient-four{
      border-radius: 50%;
-     background-color: hsla(214, 47%, 23%, 0.2);
+     background-color: $gradientFour;
      padding: 65px;
      width: 700px;
      height: 700px;
