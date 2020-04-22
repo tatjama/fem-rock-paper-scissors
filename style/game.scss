@@ -4,25 +4,10 @@
 @import './gradient';
 @import './_maingame';
 @import './_playagain';
+@import './utility';
 
 
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-html, body{     
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 16px;    
-    }
-.container{
-    background-color: $primalColor ;
-    /*background-color: hsla(229, 25%, 31%, 0.2);*/
-    width: 1366px;
-    height: 728px;
-    padding: 43px;
-    overflow: hidden;
-}
+
 .main{
     @include flex(column, space-between);
 }
@@ -152,10 +137,7 @@ button{
 }
 
 @media screen and (max-width: 375px){
-    .container{
-        width: 375px;
-        height: 765px;
-    }    
+       
     .first-row{
         margin-bottom: -70px;
     }
