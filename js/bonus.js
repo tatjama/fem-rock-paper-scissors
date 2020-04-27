@@ -45,6 +45,7 @@ function originalGame(){
 }
 
 function playAgainBonus(){    
+  playAgain();
   document.querySelector('#bonus-intro').style.display = "flex";
   document.querySelector('.second').style.display = 'none';    
 }
