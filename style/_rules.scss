@@ -1,8 +1,8 @@
 .rules{
     display: none;
     padding: 30px;
-    height: 400px;
-    width: 385px;
+    height: 460px;
+    width: 405px;
     text-align: center;
     border-radius: 10px;
     background-color: $iconColor;
@@ -10,11 +10,14 @@
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;      
+    z-index: 2;   
+    .first-row{
+        margin-bottom: 30px;
+    }   
 }
 h2{
     text-transform: uppercase;
-    margin-bottom: 95px;
+    /*margin-bottom: 95px;*/
     font-size: 28px;
 }
 @media screen and(max-width: 375px){
