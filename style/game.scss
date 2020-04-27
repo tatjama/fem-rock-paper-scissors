@@ -17,6 +17,7 @@
     background-position: center;
     @include flex(column, space-between);
     z-index: 1;
+    display: none;
 }
 .first-row{      
     @include flex(row, space-between);    
@@ -39,15 +40,18 @@
     box-shadow: 0px 7px inset $iconShadow;
 }
 #bonus-intro{
-    @include flex(column);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url('../images/bg-pentagon.svg');
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
-    display: none;
+   /* display: none;*/
 }
 .bonus-first-row{
-    @include flex(row);
+    display: flex;
+    flex-direction: row;
     margin-top: 135px;
 }
 .bonus-second-row{
