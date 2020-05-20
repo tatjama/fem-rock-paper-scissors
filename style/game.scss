@@ -30,6 +30,10 @@
     background-color: $iconColor;    
     @include flex(column, center);
     margin: 35px;
+    
+}
+.icon:hover{
+    transform: scale(1.1);
 }
 .icon-bg{
     width: 140px;
@@ -63,7 +67,10 @@
     border-radius: 50%;
     background-color: $iconColor;
     @include flex(column, center);
-    margin: 20px 20px;
+    margin: 20px 20px;   
+}
+.icon-bonus:hover{
+    transform: scale(1.1);
 }
 .icon-bonus-bg{
     width: 107px;
@@ -72,14 +79,17 @@
     background-color: $iconColor;
     @include flex(column, center);
     box-shadow: 0px 5px inset $iconShadow;
+    
 }
 .icon-bonus.scissors{
     position: relative;
     bottom: 125px;
+   
 }
 .paper{    
     background-color: $paperColor ;
     box-shadow: 0px 10px $paperShadow ;
+    
 }
 .scissors{
     background-color: $scissorsColor;

@@ -24,7 +24,12 @@
         width: 280px;
         height: 280px;
         margin: 70px 35px -35px 35px;
+        
     }
+    .icon:hover{
+        transform: scale(1);
+    }
+    
      .icon-bg{
         width: 210px;
         height: 210px;
@@ -41,5 +46,7 @@
          box-shadow: none;
         }
      }
-
+     .blank:hover{
+         transform: scale(1.2);
+     }
 }
