@@ -125,6 +125,7 @@ function showRules(){
       case win:      
       document.querySelector('.gradient').id = 'gradient';      
       document.querySelector('#play-again h2').innerHTML = messageWin;
+      document.querySelector('#play-again h2').classList.add('animacija');
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
       document.querySelector('.gradient').style.display = 'initial';
       break;
@@ -136,6 +137,8 @@ function showRules(){
       break;
       default:
       document.querySelector('.gradient').id = '';
+      document.querySelector('#house-card-image').classList.add('isto');
+      document.querySelector('#player-card-image').classList.add('isto');
       document.querySelector('#play-again h2').innerHTML = messageEqual;
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
       break;
@@ -147,10 +150,13 @@ function showRules(){
   function playAgain(){
     document.querySelector('.second').style.display = "flex";
     document.getElementById('play-again').style.display = 'none';
+    document.querySelector('#play-again h2').classList.remove('animacija');
     document.querySelector('.gradient').id = '';
     document.querySelector('.gradient').style.display = 'none';
     document.getElementById('house-card').style.display = "none";
     document.getElementById('blank').style.display = "flex";
     document.querySelector('.start-game').style.display = "none"; 
+    document.querySelector('#player-card-image').classList.remove('isto');
+    document.querySelector('#house-card-image').classList.remove('isto');
   }
   

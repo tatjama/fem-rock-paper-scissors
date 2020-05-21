@@ -10,6 +10,21 @@
         font-size: 12px;
     }
 }
+.animacija{
+    animation: anim 2s linear;
+}
+@keyframes anim{
+    0%{color: yellow;
+    transform: scale(1.2);}
+    30%{color: green;
+    transform: rotate(180deg);}
+    60%{color: red;
+    transform: scale(0.8);}
+    80%{color: blue;
+    transform: rotate3d(180deg);}
+    100%{color: violet;
+    transform: scale(1.5);}
+}
 @media screen and(max-width: 375px){
     #play-again{
         flex-direction: column;

@@ -50,6 +50,18 @@
      height: 700px;
      animation: win 1.5s ease-in-out ;
  }
+ .isto{
+     animation: equal 1.5s linear;
+ }
+ @keyframes equal{
+     0%{transform: rotate(10deg);}
+    
+     35%{transform: rotate(350deg);}
+    
+     70%{transform: rotate(10deg);}
+    
+     100%{transform: rotate(350deg);}
+ }
  
  
  /**Interesting gradient effect***/
