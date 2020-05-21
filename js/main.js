@@ -12,6 +12,11 @@
       messageEqual = 'E q u a l';
       messageWin = 'Y o u &nbsp W i n';
       messageLose = 'Y o u &nbsp L o s e';
+      
+      function audio(url){
+        new Audio(url).play();
+      }
+      
 
     
      
@@ -36,6 +41,7 @@ function showRules(){
  
   function pickCardPlayer(e, b, c, d, g, url){
     new Audio(url).play();
+
       var x = e.className;
       var playerCard = document.getElementById('player-card');
       y = x.slice(b);
@@ -112,7 +118,7 @@ function showRules(){
   }
    
   /****GAME RESULT SHOW AND SAVE IN SESSION - SAME FUNCTION IN BONUS*/
-  function showResult(url){       
+  function showResult(){       
     var score = parseInt(document.querySelector('.score h1').innerHTML);
     //session storage 
     sessionStorage.setItem('score', score );
@@ -130,13 +136,14 @@ function showRules(){
       document.querySelector('#play-again h2').classList.add('animacija');
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
       document.querySelector('.gradient').style.display = 'initial';     
-
+      audio('./audio/applause_short.mp3');
       break;
       case lose:      
       document.querySelector('.gradient').id = 'gradient1';
       document.querySelector('#play-again h2').innerHTML = messageLose;
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) - 1;
       document.querySelector('.gradient').style.display = 'initial';
+      audio('./audio/boo_short.mp3');
       break;
       default:
       document.querySelector('.gradient').id = '';
@@ -144,6 +151,7 @@ function showRules(){
       document.querySelector('#player-card-image').classList.add('isto');
       document.querySelector('#play-again h2').innerHTML = messageEqual;
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score'));
+      audio('./audio/coin_short.mp3');
       break;
     }
     //new score write in section
