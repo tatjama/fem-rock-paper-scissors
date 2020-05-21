@@ -30,7 +30,7 @@
     background-color: $iconColor;    
     @include flex(column, center);
     margin: 35px;
-    animation: click 0.2s ease-in-out;
+    animation: click 0.1s linear;
 }
 .icon:hover{
     transform: scale(1.1);
@@ -38,11 +38,11 @@
 @keyframes click{
     0% {
         transform: scale(1);
-        opacity: 0;
+       opacity: 0;
     }
     50% {
         transform: scale(0.2);
-        opacity: 0;
+        opacity: 1;
     }
     100% {
         transform: scale(1);
