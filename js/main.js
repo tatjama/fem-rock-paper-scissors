@@ -33,7 +33,9 @@ function showRules(){
   }
 
  /*******GAME LOGIC , pick player card and bonus player card*/ 
-  function pickCardPlayer(e, b, c, d, g){
+ 
+  function pickCardPlayer(e, b, c, d, g, url){
+    new Audio(url).play();
       var x = e.className;
       var playerCard = document.getElementById('player-card');
       y = x.slice(b);
@@ -110,7 +112,7 @@ function showRules(){
   }
    
   /****GAME RESULT SHOW AND SAVE IN SESSION - SAME FUNCTION IN BONUS*/
-  function showResult(){    
+  function showResult(url){       
     var score = parseInt(document.querySelector('.score h1').innerHTML);
     //session storage 
     sessionStorage.setItem('score', score );
@@ -127,7 +129,8 @@ function showRules(){
       document.querySelector('#play-again h2').innerHTML = messageWin;
       document.querySelector('#play-again h2').classList.add('animacija');
       document.querySelector('.score h1').innerHTML = parseInt(sessionStorage.getItem('score')) + 1;
-      document.querySelector('.gradient').style.display = 'initial';
+      document.querySelector('.gradient').style.display = 'initial';     
+
       break;
       case lose:      
       document.querySelector('.gradient').id = 'gradient1';
