@@ -31,7 +31,7 @@ function storageScore(){
 
 /*****RULES SHOW AND HIDE */
 function showRules(){
-    document.querySelector(".rules").style.display = "block";
+    document.querySelector(".rules").style.display = "inherit";
   }
   function hideRules(){
     document.querySelector(".rules").style.display = "none";
