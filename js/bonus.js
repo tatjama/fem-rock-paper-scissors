@@ -4,7 +4,7 @@ function displayRulesImageBonus(size){
       document.querySelector('.rules').style.height = '790px';
   }else{
       document.querySelector('.rules').style.height = '460px';
-      document.querySelector('.rules').style.width = '405px';
+      document.querySelector('.rules').style.width = '410px';
   }
 }      
 function displayRulesImageOriginal(size){
@@ -12,7 +12,7 @@ if(size.matches){
   document.querySelector('.rules').style.height = '790px';
 }else{
   document.querySelector('.rules').style.height = '400px';
-  document.querySelector('.rules').style.width = '385px';
+  document.querySelector('.rules').style.width = '400px';
 }
 }
 

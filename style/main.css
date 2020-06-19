@@ -174,7 +174,7 @@ button{
     display: none;
     padding: 30px;
     height: 400px;
-    width: 385px;
+    width: 400px;
     text-align: center;
     border-radius: 10px;
     background-color: whitesmoke;
@@ -322,7 +322,7 @@ h2{
 }*/
 @media screen and (max-width: 375px){
     .container{
-        width: 375px;
+        width: 400px;
         height: 765px;
     }
     .first{
